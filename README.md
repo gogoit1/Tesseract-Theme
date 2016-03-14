@@ -1,9 +1,9 @@
 Tesseract
 ===
 
-[![Code Climate](https://codeclimate.com/github/seb86/Tesseract-Theme/badges/gpa.svg)](https://codeclimate.com/github/seb86/Tesseract-Theme) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/seb86/Tesseract-Theme/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/seb86/Tesseract-Theme/?branch=master) [![GitHub forks](https://img.shields.io/github/forks/seb86/Tesseract-Theme.svg?style=flat)](https://github.com/seb86/Tesseract-Theme/network) [![GitHub license](https://img.shields.io/badge/license-GPLv2-blue.svg?style=flat)](https://raw.githubusercontent.com/seb86/Tesseract-Theme/master/license.txt)
+[![Code Climate](https://codeclimate.com/github/seb86/Tesseract-Theme/badges/gpa.svg)](https://codeclimate.com/github/seb86/Tesseract-Theme) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/seb86/Tesseract-Theme/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/seb86/Tesseract-Theme/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/seb86/Tesseract-Theme/badges/build.png?b=master)](https://scrutinizer-ci.com/g/seb86/Tesseract-Theme/build-status/master) [![GitHub forks](https://img.shields.io/github/forks/seb86/Tesseract-Theme.svg?style=flat)](https://github.com/seb86/Tesseract-Theme/network) [![GitHub license](https://img.shields.io/badge/license-GPLv2-blue.svg?style=flat)](https://raw.githubusercontent.com/seb86/Tesseract-Theme/master/license.txt)
 
-Tesseract is a 100% free WordPress theme that allow you to make a website beautiful. 
+Tesseract is a 100% free WordPress theme that allow you to make a website beautiful.
 
 
 
