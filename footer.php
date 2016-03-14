@@ -15,7 +15,9 @@
 		<?php $additional = get_theme_mod('tesseract_footer_additional_content') ? true : false;
 
         $menuClass = 'only-menu';
-        if ($additional) $menuClass = 'is-additional';
+        if ($additional) {
+        	$menuClass = 'is-additional';
+        }
 
         $addcontent_hml = get_theme_mod('tesseract_footer_additional_content');
 		$footerNav_class = (is_string($addcontent_hml) && ($addcontent_hml !== 'nothing')) ? 'is-before' : 'none-before';

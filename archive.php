@@ -35,9 +35,12 @@ get_header(); ?>
 
 			<?php tesseract_paging_nav(); ?>
 
-		<?php else : ?>
+		<?php else {
+	: ?>
 
-			<?php get_template_part('content', 'none'); ?>
+			<?php get_template_part('content', 'none');
+}
+?>
 
 		<?php endif; ?>
 

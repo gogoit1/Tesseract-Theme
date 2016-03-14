@@ -50,9 +50,12 @@ get_header(); ?>
 
 			<?php tesseract_paging_nav(); ?>
 
-		<?php else : ?>
+		<?php else {
+	: ?>
 
-			<?php get_template_part('content', 'none'); ?>
+			<?php get_template_part('content', 'none');
+}
+?>
 
 		<?php endif; ?>
 
@@ -60,7 +63,9 @@ get_header(); ?>
 	</section><!-- #primary -->
 
 	<?php
-		if ( ! $slayout || ($slayout == 'sidebar-left') || ($slayout == 'sidebar-right')) get_sidebar();
+		if ( ! $slayout || ($slayout == 'sidebar-left') || ($slayout == 'sidebar-right')) {
+			get_sidebar();
+		}
 	?>
 
 <?php get_footer(); ?>

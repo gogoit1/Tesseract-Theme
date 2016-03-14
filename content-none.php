@@ -23,9 +23,12 @@
 			<p><?php _e('Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'tesseract'); ?></p>
 			<?php get_search_form(); ?>
 
-		<?php else : ?>
+		<?php else {
+	: ?>
 
-			<p><?php _e('It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'tesseract'); ?></p>
+			<p><?php _e('It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'tesseract');
+}
+?></p>
 			<?php get_search_form(); ?>
 
 		<?php endif; ?>

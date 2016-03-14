@@ -32,15 +32,21 @@ get_header();
 
 			<?php endwhile; ?>
 
-		<?php else : ?>
+		<?php else {
+	: ?>
 
-			<?php get_template_part('content', 'none'); ?>
+			<?php get_template_part('content', 'none');
+}
+?>
 
 		<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
     <?php $layout_default = get_theme_mod('tesseract_woocommerce_default_layout'); ?>
-<?php if ((is_plugin_active('woocommerce/woocommerce.php') && (($layout_default == 'sidebar-left') || ($layout_default == 'sidebar-right')))) get_sidebar(); ?>
+<?php if ((is_plugin_active('woocommerce/woocommerce.php') && (($layout_default == 'sidebar-left') || ($layout_default == 'sidebar-right')))) {
+	get_sidebar();
+}
+?>
 
 <?php get_footer(); ?>
