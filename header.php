@@ -32,7 +32,7 @@ $bodyClass = (version_compare($wp_version, '4.0.0', '>') && is_customize_preview
 $slayout = get_theme_mod('tesseract_search_results_layout');
 
 $bplayout = get_theme_mod('tesseract_blog_post_layout');
- 
+
 if ((is_page()) && (has_post_thumbnail())) {
 	$bodyClass .= ' tesseract-featured';
 }
@@ -64,7 +64,7 @@ if (is_search()) {
 		$bodyClass .= ' sidebar-right';
 	}
 	}
- 
+
 ?>
 
 <body <?php body_class($bodyClass); ?>>
@@ -119,14 +119,14 @@ $headpos = (is_front_page() && ($header_bckOpacity && (intval($opValue) < 100)))
 
 						<?php if ($logoImg || $blogname) { ?>
                             <div class="site-branding <?php if ( ! display_header_text()) { echo 'hide-header-text'; } ?>">
-                                <?php if ($logoImg) : ?>
+                                <?php if ($logoImg) { ?>
                                     <h1 class="site-logo"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img src="<?php echo $logoImg; ?>" alt="logo" /></a></h1>
-                                <?php else {
+                                <?php } else {
 	: ?>
                                     <h1 class="site-title"><a href="<?php echo esc_url(home_url('/'));
 }
 ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
-                                <?php endif; ?>
+                                <?php } ?>
                             </div><!-- .site-branding -->
                         <?php } ?>
 
