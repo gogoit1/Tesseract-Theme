@@ -1,16 +1,12 @@
 <?php
-
 function tesseract_header_right_content($content) {
-
 	switch ($content) {
-
 		// Step 1 -> nothing
 		default:
 			break;
 
 		// Step 2 -> logo
 		case 'buttons':
-
 			$code = get_theme_mod('tesseract_header_content_if_button');
 			if ((get_theme_mod('tesseract_header_right_content') == 'buttons') && ( ! $code || ! isset($code))) {
 				echo '<div id="header-button-container"><div id="header-button-container-inner"><a href="/" class="button primary-button">Primary Button</a><a href="/" class="button secondary-button">Secondary Button</a></div></div>';
@@ -21,86 +17,76 @@ function tesseract_header_right_content($content) {
 			break;
 
 		// Step 3 -> social
-		case 'social': ?>
+		case 'social':
+		?>
+    <div class="social-wrapper cf">
+			<ul class="hr-social">
+				<?php tesseract_display_social_network_list_items(); ?>
+			</ul>
+		</div>
 
-            <div class="social-wrapper cf">
-				<ul class="hr-social">
-					<?php tesseract_display_social_network_list_items(); ?>
-				</ul>
-			</div>
-
-		<?php break;
+		<?php
+		break;
 
 		// Step 5 -> search
 		case 'search':
-
 			get_search_form();
-
-			break;
+		break;
 
 		// Step 6 -> menu
-		case 'menu'; ?>
-
-          	<nav id="header-right-menu" role="navigation">
-				<?php tesseract_output_menu(FALSE, FALSE, 'primary_right', 0); ?>
-			</nav>
-
-	<?php }
-
+		case 'menu';
+		?>
+    <nav id="header-right-menu" role="navigation">
+			<?php tesseract_output_menu(FALSE, FALSE, 'primary_right', 0); ?>
+		</nav>
+		<?php
+	}
 }
 
 function tesseract_horizontal_footer_menu_additional_content($content) {
-
 	$headerLogo = get_theme_mod('tesseract_header_logo_image');
 	$footerLogo = get_theme_mod('tesseract_footer_logo_image');
 	$footerLogoEnable = (get_theme_mod('tesseract_footer_logo_enable') == 1) ? true : false;
 
 	switch ($content) {
-
 		// Step 1 -> nothing
 
 		// Step 2 -> logo
 		case 'logo':
-
 			$logoImg = ($footerLogoEnable && $footerLogo) ? $footerLogo : $headerLogo;
 
-			if ($logoImg) : ?>
-
-				<div class="site-branding">
-					<h1 class="site-logo"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img src="<?php echo $logoImg; ?>" alt="logo" /></a></h1>
-				</div>
-
-			<?php else {
-	: ?>
-
-				<div class="site-branding">
-					<h1 class="site-title"><a href="<?php echo esc_url(home_url('/'));
-}
-?>" rel="home"><?php echo get_bloginfo('blogname'); ?></a></h1>
-				</div>
-
-			<?php endif;
-			break;
+			if ($logoImg) {
+			?>
+			<div class="site-branding">
+				<h1 class="site-logo"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img src="<?php echo $logoImg; ?>" alt="logo" /></a></h1>
+			</div>
+			<?php
+			} else {
+			?>
+			<div class="site-branding">
+				<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php echo get_bloginfo('blogname'); ?></a></h1>
+			</div>
+			<?php
+			}
+		break;
 
 		// Step 3 -> social
-		case 'social': ?>
+		case 'social':
+		?>
+		<ul class="hm-social">
+			<?php tesseract_display_social_network_list_items(); ?>
+		</ul>
 
-				<ul class="hm-social">
-					<?php tesseract_display_social_network_list_items(); ?>
-				</ul>
-
-			<?php break;
+		<?php
+		break;
 
 		// Step 5 -> search
 		case 'search':
-
 			get_search_form();
+		break;
 
-			break;
 		default:
-
 	}
-
 }
 
 /**
@@ -126,22 +112,22 @@ function tesseract_display_social_network_list_items() {
 /**
  * Let's turn hex value into RGB
  * source at http://css-tricks.com/snippets/php/convert-hex-to-rgb/
- *
  */
 
 function tesseract_hex2rgb($colour) {
-        if ($colour[0] == '#') {
-                $colour = substr($colour, 1);
-        }
-        if (strlen($colour) == 6) {
-                list($r, $g, $b) = array($colour[0].$colour[1], $colour[2].$colour[3], $colour[4].$colour[5]);
-        } elseif (strlen($colour) == 3) {
-                list($r, $g, $b) = array($colour[0].$colour[0], $colour[1].$colour[1], $colour[2].$colour[2]);
-        } else {
-                return false;
-        }
-        $r = hexdec($r);
-        $g = hexdec($g);
-        $b = hexdec($b);
-        return array('red' => $r, 'green' => $g, 'blue' => $b);
+  if ($colour[0] == '#') {
+    $colour = substr($colour, 1);
+  }
+  if (strlen($colour) == 6) {
+    list($r, $g, $b) = array($colour[0].$colour[1], $colour[2].$colour[3], $colour[4].$colour[5]);
+  } elseif (strlen($colour) == 3) {
+    list($r, $g, $b) = array($colour[0].$colour[0], $colour[1].$colour[1], $colour[2].$colour[2]);
+  } else {
+    return false;
+  }
+  $r = hexdec($r);
+  $g = hexdec($g);
+  $b = hexdec($b);
+
+  return array('red' => $r, 'green' => $g, 'blue' => $b);
 }
