@@ -7,37 +7,37 @@ class TesseractGoogleMapModule extends FLBuilderModule {
 	 * @method __construct
 	 */
 	public function __construct() {
-		parent::__construct( array(
-			'name'          => __( 'Map', 'fl-builder' ),
-			'description'   => __( 'Google Map', 'fl-builder' ),
-			'category'      => __( 'Advanced Modules', 'fl-builder' ),
-			'dir'           => TESSERACT_BB_MODULE_DIR . 'map/',
-			'url'           => TESSERACT_BB_MODULE_URL . 'map/',
+		parent::__construct(array(
+			'name'          => __('Map', 'fl-builder'),
+			'description'   => __('Google Map', 'fl-builder'),
+			'category'      => __('Advanced Modules', 'fl-builder'),
+			'dir'           => TESSERACT_BB_MODULE_DIR.'map/',
+			'url'           => TESSERACT_BB_MODULE_URL.'map/',
 			'enabled'       => true,
 		));
 
-		if ( ! defined( 'GOOGLE_MAPS_API_KEY' ) ) {
-					define( 'GOOGLE_MAPS_API_KEY', 'AIzaSyDdg6IMS4WeWJRORd0wU_gcE-kFOUKt4zE' );
+		if ( ! defined('GOOGLE_MAPS_API_KEY')) {
+					define('GOOGLE_MAPS_API_KEY', 'AIzaSyDdg6IMS4WeWJRORd0wU_gcE-kFOUKt4zE');
 		}
 
-		$this->add_js( 'google-maps-javascript-api', 'https://maps.googleapis.com/maps/api/js?key=' . GOOGLE_MAPS_API_KEY, array( 'jquery' ), '3.0', true );
+		$this->add_js('google-maps-javascript-api', 'https://maps.googleapis.com/maps/api/js?key='.GOOGLE_MAPS_API_KEY, array('jquery'), '3.0', true);
 	}
 }
 
-FLBuilder::register_module( 'TesseractGoogleMapModule', array(
+FLBuilder::register_module('TesseractGoogleMapModule', array(
 	'tesseract-map-module'      => array(
-		'title'         => __( 'General', 'fl-builder' ),
+		'title'         => __('General', 'fl-builder'),
 		'sections' => array(
 			'display' => array(
-				'title' => __( 'Display', 'fl-builder' ),
+				'title' => __('Display', 'fl-builder'),
 				'fields' => array(
 					'fullwidth'     => array(
 						'type'      => 'select',
-						'label'     => __( 'Full width map?', 'fl-builder' ),
+						'label'     => __('Full width map?', 'fl-builder'),
 						'default'   => 'yes',
 						'options'   => array(
-							'yes'      => __( 'Yes', 'fl-builder' ),
-							'no'      => __( 'No', 'fl-builder' ),
+							'yes'      => __('Yes', 'fl-builder'),
+							'no'      => __('No', 'fl-builder'),
 						),
 						'toggle'        => array(
 							'no'      => array(
