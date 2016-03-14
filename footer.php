@@ -14,12 +14,12 @@
 
 		<?php $additional = get_theme_mod('tesseract_footer_additional_content') ? true : false;
 
-        $menuClass = 'only-menu';
-        if ($additional) {
-        	$menuClass = 'is-additional';
-        }
+		$menuClass = 'only-menu';
+		if ($additional) {
+			$menuClass = 'is-additional';
+		}
 
-        $addcontent_hml = get_theme_mod('tesseract_footer_additional_content');
+		$addcontent_hml = get_theme_mod('tesseract_footer_additional_content');
 		$footerNav_class = (is_string($addcontent_hml) && ($addcontent_hml !== 'nothing')) ? 'is-before' : 'none-before';
 
 		$content = get_theme_mod('tesseract_footer_right');
@@ -45,7 +45,7 @@
             <div id="horizontal-menu-wrap" class="<?php echo $menuClass.' '.$footerNav_class; ?>">
 
                 <?php // SHOULD some additional content be added before the menu?
-                if (is_string($addcontent_hml) && ($addcontent_hml !== 'nothing')) : ?>
+				if (is_string($addcontent_hml) && ($addcontent_hml !== 'nothing')) : ?>
 
                     <div id="horizontal-menu-before" class="switch thm-left-left"><?php tesseract_horizontal_footer_menu_additional_content($addcontent_hml); ?></div>
 
