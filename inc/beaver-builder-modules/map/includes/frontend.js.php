@@ -1,4 +1,4 @@
-<?php if ( ! empty( $settings->lat ) ): ?>
+<?php if ( ! empty($settings->lat)): ?>
 var position = {
 	lat: <?php echo $settings->lat; ?>,
 	lng: <?php echo $settings->lng; ?>

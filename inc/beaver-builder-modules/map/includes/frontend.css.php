@@ -1,6 +1,6 @@
 .fl-node-<?php echo $id; ?> {
 	max-width: 100%;
-	<?php if ( $settings->fullwidth === 'no' ): ?>
+	<?php if ($settings->fullwidth === 'no'): ?>
 	float: <?php echo $settings->float; ?>;
 	<?php endif; ?>
 }

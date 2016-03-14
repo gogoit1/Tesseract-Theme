@@ -16,8 +16,9 @@ class TesseractGoogleMapModule extends FLBuilderModule {
 			'enabled'       => true,
 		));
 
-		if ( ! defined( 'GOOGLE_MAPS_API_KEY' ) )
-			define( 'GOOGLE_MAPS_API_KEY', 'AIzaSyDdg6IMS4WeWJRORd0wU_gcE-kFOUKt4zE' );
+		if ( ! defined( 'GOOGLE_MAPS_API_KEY' ) ) {
+					define( 'GOOGLE_MAPS_API_KEY', 'AIzaSyDdg6IMS4WeWJRORd0wU_gcE-kFOUKt4zE' );
+		}
 
 		$this->add_js( 'google-maps-javascript-api', 'https://maps.googleapis.com/maps/api/js?key=' . GOOGLE_MAPS_API_KEY, array( 'jquery' ), '3.0', true );
 	}
@@ -57,20 +58,20 @@ FLBuilder::register_module( 'TesseractGoogleMapModule', array(
 					),
 					'width'     => array(
 						'type'          => 'text',
-						'label'         => __( 'Width', 'fl-builder' ),
-						'description'   => __( 'Width in pixels', 'fl-builder' ),
+						'label'         => __('Width', 'fl-builder'),
+						'description'   => __('Width in pixels', 'fl-builder'),
 						'default'       => '600',
 					),
 					'height'     => array(
 						'type'          => 'text',
-						'label'         => __( 'Height', 'fl-builder' ),
-						'description'   => __( 'Height in pixels', 'fl-builder' ),
+						'label'         => __('Height', 'fl-builder'),
+						'description'   => __('Height in pixels', 'fl-builder'),
 						'default'       => '400',
 					),
 					'float' => array(
 						'type'      => 'select',
-						'label'     => __( 'Float', 'fl-builder' ),
-						'default'   => __( 'none', 'fl-builder' ),
+						'label'     => __('Float', 'fl-builder'),
+						'default'   => __('none', 'fl-builder'),
 						'options'   => array(
 							'none' => 'None',
 							'left' => 'Left',
@@ -79,9 +80,9 @@ FLBuilder::register_module( 'TesseractGoogleMapModule', array(
 					),
 					'zoom' => array(
 						'type'      => 'select',
-						'label'     => __( 'Zoom Level', 'fl-builder' ),
+						'label'     => __('Zoom Level', 'fl-builder'),
 						'default'   => '8',
-						'options'   => range( 0, 20 ),
+						'options'   => range(0, 20),
 						'preview'      => array(
 							'type'         => 'none'
 						),
@@ -96,8 +97,8 @@ FLBuilder::register_module( 'TesseractGoogleMapModule', array(
 					),
 					'query'     => array(
 						'type'          => 'text',
-						'label'         => __( 'Search location', 'fl-builder' ),
-						'description'   => __( 'Enter an address. eg. 123 Main st, Los Angeles, CA', 'fl-builder' ),
+						'label'         => __('Search location', 'fl-builder'),
+						'description'   => __('Enter an address. eg. 123 Main st, Los Angeles, CA', 'fl-builder'),
 						'default'       => '',
 						'preview'      => array(
 							'type'         => 'none'

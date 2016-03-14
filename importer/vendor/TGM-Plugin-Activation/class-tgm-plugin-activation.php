@@ -1322,13 +1322,13 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 			$key     = preg_replace( '`[^A-Za-z0-9_-]`', '', $key );
 
 			/**
-			* Filter a sanitized key string.
-			*
-			* @since 3.0.0
-			*
-			* @param string $key     Sanitized key.
-			* @param string $raw_key The key prior to sanitization.
-			*/
+			 * Filter a sanitized key string.
+			 *
+			 * @since 3.0.0
+			 *
+			 * @param string $key     Sanitized key.
+			 * @param string $raw_key The key prior to sanitization.
+			 */
 			return apply_filters( 'tgmpa_sanitize_key', $key, $raw_key );
 		}
 
