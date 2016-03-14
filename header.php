@@ -86,25 +86,25 @@ $headpos = (is_front_page() && ($header_bckOpacity && (intval($opValue) < 100)))
 	<a class="skip-link screen-reader-text" href="#content"><?php _e('Skip to content', 'tesseract'); ?></a>
 
 	<?php $logoImg = get_theme_mod('tesseract_header_logo_image');
-    $blogname = get_bloginfo('blogname');
-    $hmenusize = get_theme_mod('tesseract_header_width');
+	$blogname = get_bloginfo('blogname');
+	$hmenusize = get_theme_mod('tesseract_header_width');
 
 	$mmdisplay = get_theme_mod('tesseract_mobmenu_opener');
 	$mmdClass = ($mmdisplay == 1) ? 'showit' : 'hideit';
 
-    $hmenusize_class = ($hmenusize == 'fullwidth') ? 'fullwidth' : 'autowidth';
+	$hmenusize_class = ($hmenusize == 'fullwidth') ? 'fullwidth' : 'autowidth';
 
-    if ( ! $logoImg && $blogname) {
-    	$brand_content = 'blogname';
-    }
-    if ($logoImg) {
-    	$brand_content = 'logo';
-    }
-    if ( ! $logoImg && ! $blogname) {
-    	$brand_content = 'no-brand';
-    }
+	if ( ! $logoImg && $blogname) {
+		$brand_content = 'blogname';
+	}
+	if ($logoImg) {
+		$brand_content = 'logo';
+	}
+	if ( ! $logoImg && ! $blogname) {
+		$brand_content = 'no-brand';
+	}
 
-    ?>
+	?>
 
     <header id="masthead" class="site-header <?php echo $rightclass.$headpos.' '.'menusize-'.$hmenusize_class.' '; echo get_header_image() ? 'is-header-image' : 'no-header-image'; ?>" role="banner">
 

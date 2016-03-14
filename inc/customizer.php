@@ -117,8 +117,8 @@ function tesseract_customize_preview_js() {
 		$lighter = "#".sprintf("%02X%02X%02X", $lighter[0], $lighter[1], $lighter[2]);
 
 	// Localize script
-    wp_localize_script('tesseract_customizer', 'tesseract_vars', array(
- 	    'mobmenu_link_hover_background_color_custom'   	=> get_theme_mod('tesseract_mobmenu_link_hover_background_color_custom'),
+	wp_localize_script('tesseract_customizer', 'tesseract_vars', array(
+ 		'mobmenu_link_hover_background_color_custom'   	=> get_theme_mod('tesseract_mobmenu_link_hover_background_color_custom'),
 		'mobmenu_shadow_color_custom'   				=> get_theme_mod('tesseract_mobmenu_shadow_color_custom'),
 		'mobmenu_search_color'   						=> get_theme_mod('tesseract_mobmenu_search_color'),
 		'mobmenu_buttons_background_color_custom' 		=> get_theme_mod('tesseract_mobmenu_buttons_background_color_custom'),

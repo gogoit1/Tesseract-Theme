@@ -31,16 +31,16 @@
 	<div class="entry-content">
 		<?php
 		
-		    if (is_home() || is_archive()) {
+			if (is_home() || is_archive()) {
 				
 				$contentType = get_theme_mod('tesseract_blog_content');
-                if ($contentType == 'content') {
+				if ($contentType == 'content') {
 					the_content();
 				} else {
 					the_excerpt();
 				}
 				
-            } else {
+			} else {
 				 
 			/* translators: %s: Name of current post */
 			the_content(sprintf(
