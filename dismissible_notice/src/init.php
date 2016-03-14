@@ -23,21 +23,21 @@ add_action('admin_notices', 'display_notice');
 
 require('Caldera_Warnings_Dismissible_Notice.php');
 
-add_action( 'admin_enqueue_scripts', 'Caldera_Warnings_Dismissible_Notice::js_css' );
+add_action('admin_enqueue_scripts', 'Caldera_Warnings_Dismissible_Notice::js_css');
 
-if ( ! function_exists( 'caldera_warnings_dismissible_notice_cb' ) ) {
+if ( ! function_exists('caldera_warnings_dismissible_notice_cb')) {
 	/**
 	 * Hook to AJAX
 	 *
 	 * @since 0.2.0
 	 */
-	add_action( 'wp_ajax_caldera_warnings_dismissible_notice', 'caldera_warnings_dismissible_notice_cb' );
+	add_action('wp_ajax_caldera_warnings_dismissible_notice', 'caldera_warnings_dismissible_notice_cb');
 	function caldera_warnings_dismissible_notice_cb() {
 		return Caldera_Warnings_Dismissible_Notice::ajax_cb();
 	}
 }
 
-if ( ! function_exists( 'caldera_warnings_dismissible_notice' ) ) {
+if ( ! function_exists('caldera_warnings_dismissible_notice')) {
 	/**
 	 * Create a dismissible notice.
 	 *
@@ -50,8 +50,8 @@ if ( ! function_exists( 'caldera_warnings_dismissible_notice' ) ) {
 	 *
 	 * @return string|void Admin notice if is_admin() and not dismissed.
 	 */
-	function caldera_warnings_dismissible_notice( $message,  $error = true, $cap_check = 'activate_plugins', $ignore_key = false ) {
-		return Caldera_Warnings_Dismissible_Notice::notice( $message, $error, $cap_check, $ignore_key );
+	function caldera_warnings_dismissible_notice($message, $error = true, $cap_check = 'activate_plugins', $ignore_key = false) {
+		return Caldera_Warnings_Dismissible_Notice::notice($message, $error, $cap_check, $ignore_key);
 	}
 
 }

@@ -3,23 +3,23 @@
  * section BLOG
  */					 			
 			
-   	$wp_customize->add_section( 'tesseract_blog' , array(
+   	$wp_customize->add_section('tesseract_blog', array(
     	'title'      		=> __('Blog Post Options', 'tesseract'),
     	'priority'   		=> 1,
 		'panel' 			=> 'tesseract_layout'
-	) );						
+	));						
 			
-		$wp_customize->add_setting( 'tesseract_blog_content', array(
+		$wp_customize->add_setting('tesseract_blog_content', array(
 				'sanitize_callback' => 'tesseract_blog_sanitize_content',
 				'default'			=> 'excerpt'				
-		) );
+		));
 		
 			$wp_customize->add_control(
 				new WP_Customize_Control(
 					$wp_customize,
 					'tesseract_blog_content_control',
 					array(
-						'label'          => __( 'Choose the article content type', 'tesseract' ),
+						'label'          => __('Choose the article content type', 'tesseract'),
 						'section'        => 'tesseract_blog',
 						'settings'       => 'tesseract_blog_content',
 						'type'           => 'radio',
@@ -32,17 +32,17 @@
 				)
 			);
 			
-	$wp_customize->add_setting( 'tesseract_blog_post_layout', array(
+	$wp_customize->add_setting('tesseract_blog_post_layout', array(
 				'sanitize_callback' => 'tesseract_sanitize_select_blog_post_layout_types',
 				'default' 			=> 'sidebar-left'
-		) );
+		));
 
 			$wp_customize->add_control(
 				new WP_Customize_Control(
 					$wp_customize,
 					'tesseract_blog_post_layout_control',
 					array(
-						'label'         => __( 'Choose a layout type for the Blog Post page', 'tesseract' ),
+						'label'         => __('Choose a layout type for the Blog Post page', 'tesseract'),
 						'section'       => 'tesseract_blog',
 						'settings'      => 'tesseract_blog_post_layout',
 						'type'          => 'select',
