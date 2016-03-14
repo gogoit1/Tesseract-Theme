@@ -1,10 +1,10 @@
 <?php
 /**
-	 * Jetpack Compatibility File
-	 * See: http://jetpack.me/
-	 *
-	 * @package Tesseract
-	 */
+ * Jetpack Compatibility File
+ * See: http://jetpack.me/
+ *
+ * @package Tesseract
+ */
 
 /**
  * Add theme support for Infinite Scroll.
