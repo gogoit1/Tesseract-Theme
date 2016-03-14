@@ -3,41 +3,41 @@
  * section HEADER COLORS
  */
 
-   	$wp_customize->add_section( 'tesseract_header_colors' , array(
+   	$wp_customize->add_section('tesseract_header_colors', array(
 		'title'      => __('Header Colors', 'tesseract'),
 		'priority'   => 1,
 		'panel'      => 'tesseract_header_options'
-	) );
+	));
 
 		//Register setting with the custom ALPHA enabled colorpicker
 		// See full blog post here
 		// http://pluto.kiwi.nz/2014/07/how-to-add-a-color-control-with-alphaopacity-to-the-wordpress-theme-customizer/
 
-		$wp_customize->add_setting( 'tesseract_header_colors_bck_color', array(
+		$wp_customize->add_setting('tesseract_header_colors_bck_color', array(
 				'transport'         => 'postMessage',
 				'sanitize_callback' => 'tesseract_sanitize_rgba',
 				'default' 			=> '#59bcd9'
-		) );
+		));
 
 			$wp_customize->add_control(
 				new WP_Customize_Color_Control(
 				$wp_customize,
 				'tesseract_header_colors_bck_color_control',
 				array(
-					'label'      => __( 'Header Background Color', 'tesseract' ),
+					'label'      => __('Header Background Color', 'tesseract'),
 					'section'    => 'tesseract_header_colors',
 					'settings'   => 'tesseract_header_colors_bck_color',
 					'priority'   => 1
 				) )
 			);
 
-		$wp_customize->add_setting( 'tesseract_header_colors_bck_color_opacity', array(
+		$wp_customize->add_setting('tesseract_header_colors_bck_color_opacity', array(
 				'transport'         => 'postMessage',
 				'sanitize_callback' => 'esc_html',
 				'default' 			=> 100
-		) );
+		));
 
-			$wp_customize->add_control( 'tesseract_header_colors_bck_color_opacity_control', array(
+			$wp_customize->add_control('tesseract_header_colors_bck_color_opacity_control', array(
 				'type'        => 'range',
 				'priority'    => 2,
 				'section'     => 'tesseract_header_colors',
