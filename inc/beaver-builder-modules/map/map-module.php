@@ -24,13 +24,13 @@ class TesseractGoogleMapModule extends FLBuilderModule {
 }
 
 FLBuilder::register_module( 'TesseractGoogleMapModule', array(
-    'tesseract-map-module'      => array(
-        'title'         => __( 'General', 'fl-builder' ),
+	'tesseract-map-module'      => array(
+		'title'         => __( 'General', 'fl-builder' ),
 		'sections' => array(
 			'display' => array(
 				'title' => __( 'Display', 'fl-builder' ),
 				'fields' => array(
-                    'fullwidth'     => array(
+					'fullwidth'     => array(
 						'type'      => 'select',
 						'label'     => __( 'Full width map?', 'fl-builder' ),
 						'default'   => 'yes',
@@ -55,18 +55,18 @@ FLBuilder::register_module( 'TesseractGoogleMapModule', array(
 							)
 						)
 					),
-                    'width'     => array(
-                        'type'          => 'text',
-                        'label'         => __( 'Width', 'fl-builder' ),
+					'width'     => array(
+						'type'          => 'text',
+						'label'         => __( 'Width', 'fl-builder' ),
 						'description'   => __( 'Width in pixels', 'fl-builder' ),
 						'default'       => '600',
-                    ),
-                    'height'     => array(
-                        'type'          => 'text',
-                        'label'         => __( 'Height', 'fl-builder' ),
+					),
+					'height'     => array(
+						'type'          => 'text',
+						'label'         => __( 'Height', 'fl-builder' ),
 						'description'   => __( 'Height in pixels', 'fl-builder' ),
 						'default'       => '400',
-                    ),
+					),
 					'float' => array(
 						'type'      => 'select',
 						'label'     => __( 'Float', 'fl-builder' ),
@@ -94,15 +94,15 @@ FLBuilder::register_module( 'TesseractGoogleMapModule', array(
 						'type' => 'text',
 						'hidden' => true
 					),
-                    'query'     => array(
-                        'type'          => 'text',
-                        'label'         => __( 'Search location', 'fl-builder' ),
+					'query'     => array(
+						'type'          => 'text',
+						'label'         => __( 'Search location', 'fl-builder' ),
 						'description'   => __( 'Enter an address. eg. 123 Main st, Los Angeles, CA', 'fl-builder' ),
 						'default'       => '',
 						'preview'      => array(
 							'type'         => 'none'
 						),
-                    ),
+					),
 				)
 			)
 		)

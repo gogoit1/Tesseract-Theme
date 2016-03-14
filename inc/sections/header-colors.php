@@ -4,8 +4,8 @@
  */
 
    	$wp_customize->add_section( 'tesseract_header_colors' , array(
-    	'title'      => __('Header Colors', 'tesseract'),
-    	'priority'   => 1,
+		'title'      => __('Header Colors', 'tesseract'),
+		'priority'   => 1,
 		'panel'      => 'tesseract_header_options'
 	) );
 

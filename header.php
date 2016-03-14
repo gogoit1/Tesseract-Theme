@@ -33,23 +33,37 @@ $slayout = get_theme_mod('tesseract_search_results_layout');
 
 $bplayout = get_theme_mod('tesseract_blog_post_layout');
  
-if ( (is_page()) && (has_post_thumbnail()) ) $bodyClass .= ' tesseract-featured';
+if ( (is_page()) && (has_post_thumbnail()) ) {
+	$bodyClass .= ' tesseract-featured';
+}
 
-if ( is_plugin_active('beaver-builder-lite-version/fl-builder.php') || is_plugin_active('beaver-builder/fl-builder.php') ) $bodyClass .= ' beaver-on';
+if ( is_plugin_active('beaver-builder-lite-version/fl-builder.php') || is_plugin_active('beaver-builder/fl-builder.php') ) {
+	$bodyClass .= ' beaver-on';
+}
 
 $opValue = get_theme_mod('tesseract_header_colors_bck_color_opacity');
 
 $header_bckOpacity = is_numeric($opValue) ? TRUE : FALSE;
 
-if ( is_front_page() && ( $header_bckOpacity && ( intval($opValue) < 100 ) ) ) $bodyClass .= ' transparent-header';
+if ( is_front_page() && ( $header_bckOpacity && ( intval($opValue) < 100 ) ) ) {
+	$bodyClass .= ' transparent-header';
+}
 
 if ( is_search() ) {
-	if ( $slayout == 'fullwidth' ) $bodyClass .= ' fullwidth';
-	if ( $slayout == 'sidebar-right' ) $bodyClass .= ' sidebar-right';
-}elseif( is_single() ) {
-	if ( $bplayout == 'fullwidth' ) $bodyClass .= ' fullwidth';
-	if ( $bplayout == 'sidebar-right' ) $bodyClass .= ' sidebar-right';
-}
+	if ( $slayout == 'fullwidth' ) {
+		$bodyClass .= ' fullwidth';
+	}
+	if ( $slayout == 'sidebar-right' ) {
+		$bodyClass .= ' sidebar-right';
+	}
+	} elseif( is_single() ) {
+	if ( $bplayout == 'fullwidth' ) {
+		$bodyClass .= ' fullwidth';
+	}
+	if ( $bplayout == 'sidebar-right' ) {
+		$bodyClass .= ' sidebar-right';
+	}
+	}
  
 ?>
 
@@ -80,9 +94,15 @@ $headpos = ( is_front_page() && ( $header_bckOpacity && ( intval($opValue) < 100
 
     $hmenusize_class = ( $hmenusize == 'fullwidth' ) ? 'fullwidth' : 'autowidth';
 
-    if ( !$logoImg && $blogname ) $brand_content = 'blogname';
-    if ( $logoImg ) $brand_content = 'logo';
-    if ( !$logoImg && !$blogname ) $brand_content = 'no-brand';
+    if ( !$logoImg && $blogname ) {
+    	$brand_content = 'blogname';
+    }
+    if ( $logoImg ) {
+    	$brand_content = 'logo';
+    }
+    if ( !$logoImg && !$blogname ) {
+    	$brand_content = 'no-brand';
+    }
 
     ?>
 
@@ -101,8 +121,11 @@ $headpos = ( is_front_page() && ( $header_bckOpacity && ( intval($opValue) < 100
                             <div class="site-branding <?php if ( ! display_header_text() ) { echo 'hide-header-text'; } ?>">
                                 <?php if ( $logoImg ) : ?>
                                     <h1 class="site-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo $logoImg; ?>" alt="logo" /></a></h1>
-                                <?php else : ?>
-                                    <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+                                <?php else {
+	: ?>
+                                    <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) );
+}
+?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
                                 <?php endif; ?>
                             </div><!-- .site-branding -->
                         <?php } ?>

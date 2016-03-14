@@ -53,16 +53,16 @@ foreach ( $typ_icon_classes as $icon ) {
 asort( $typ_icons );
 
 FLBuilder::register_module( 'TesseractLinkButtonModule', array(
-    'tesseract-link-button'      => array(
-        'title'         => __( 'General', 'fl-builder' ),
+	'tesseract-link-button'      => array(
+		'title'         => __( 'General', 'fl-builder' ),
 		'sections' => array(
 			'link-setup' => array(
 				'title' => __( 'Link setup', 'fl-builder' ),
 				'fields' => array(
-                    'text'     => array(
-                        'type'          => 'text',
-                        'label'         => __( 'Button text', 'fl-builder' ),
-                    ),
+					'text'     => array(
+						'type'          => 'text',
+						'label'         => __( 'Button text', 'fl-builder' ),
+					),
 					'font_size' => array(
 						'type'          => 'text',
 						'label'         => __( 'Font size', 'fl-builder' ),
@@ -72,27 +72,27 @@ FLBuilder::register_module( 'TesseractLinkButtonModule', array(
 						'maxlength'     => '4',
 						'size'          => '5'
 					),
-                    'href'     => array(
-                        'type'          => 'link',
-                        'label'         => __( 'Button Link', 'fl-builder' ),
-                    ),
-                    'target'     => array(
-                        'type'          => 'select',
-                        'label'         => __( 'Open link in', 'fl-builder' ),
+					'href'     => array(
+						'type'          => 'link',
+						'label'         => __( 'Button Link', 'fl-builder' ),
+					),
+					'target'     => array(
+						'type'          => 'select',
+						'label'         => __( 'Open link in', 'fl-builder' ),
 						'default'       => '_top',
 						'options'       => array(
 							'_blank'      => __( 'A new window', 'fl-builder' ),
 							'_top'        => __( 'The current window', 'fl-builder' ),
 						),
-                    ),
+					),
 				),
 			),
 			'icon-setup' => array(
 				'title' => __( 'Icon setup', 'fl-builder' ),
 				'fields' => array(
-                    'icon'     => array(
-                        'type'          => 'select',
-                        'label'         => __( 'Add icon?', 'fl-builder' ),
+					'icon'     => array(
+						'type'          => 'select',
+						'label'         => __( 'Add icon?', 'fl-builder' ),
 						'default'		=> '',
 						'options'		=> array(
 							'' => 'No',
@@ -115,25 +115,25 @@ FLBuilder::register_module( 'TesseractLinkButtonModule', array(
 								)
 							),
 						)
-                    ),
-                    'icon_position'     => array(
-                        'type'          => 'select',
-                        'label'         => __( 'Icon position', 'fl-builder' ),
+					),
+					'icon_position'     => array(
+						'type'          => 'select',
+						'label'         => __( 'Icon position', 'fl-builder' ),
 						'default'		=> 'right',
 						'options'		=> array(
 							'right'   => 'Right',
 							'left' => 'Left',
 						)
-                    ),
-                    'fa_icon'     => array(
-                        'type'          => 'select',
-                        'label'         => __( 'Icon', 'fl-builder' ),
+					),
+					'fa_icon'     => array(
+						'type'          => 'select',
+						'label'         => __( 'Icon', 'fl-builder' ),
 						'default'		=> 'none',
 						'options'		=> $fa_icons,
-                    ),
-                    'fa_icon_size'     => array(
-                        'type'          => 'select',
-                        'label'         => __( 'Icon size', 'fl-builder' ),
+					),
+					'fa_icon_size'     => array(
+						'type'          => 'select',
+						'label'         => __( 'Icon size', 'fl-builder' ),
 						'default'		=> '',
 						'options'		=> array(
 							''   => 'Normal',
@@ -143,42 +143,42 @@ FLBuilder::register_module( 'TesseractLinkButtonModule', array(
 							'4x' => '4X',
 							'5x' => '5X',
 						)
-                    ),
-                    'typ_icon'     => array(
-                        'type'          => 'select',
-                        'label'         => __( 'Icon', 'fl-builder' ),
+					),
+					'typ_icon'     => array(
+						'type'          => 'select',
+						'label'         => __( 'Icon', 'fl-builder' ),
 						'default'		=> 'none',
 						'options'		=> $typ_icons,
-                    ),
-                    'typ_icon_size'     => array(
-                        'type'          => 'text',
-                        'label'         => __( 'Icon size', 'fl-builder' ),
+					),
+					'typ_icon_size'     => array(
+						'type'          => 'text',
+						'label'         => __( 'Icon size', 'fl-builder' ),
 						'default'		=> '100',
 						'description'   => '%',
 						'placeholder'   => '100',
 						'maxlength'     => '4',
 						'size'          => '5'
-                    ),
+					),
 				)
 			),
 			'button-colors' => array(
 				'title' => __( 'Button colors', 'fl-builder' ),
 				'fields' => array(
-                    'text_color'     => array(
-                        'type'          => 'color',
-                        'label'         => __( 'Text color', 'fl-builder' ),
+					'text_color'     => array(
+						'type'          => 'color',
+						'label'         => __( 'Text color', 'fl-builder' ),
 						'default'       => '333',
 						'show_reset'    => true,
 					),
-                    'button_color'     => array(
-                        'type'          => 'color',
-                        'label'         => __( 'Button color', 'fl-builder' ),
+					'button_color'     => array(
+						'type'          => 'color',
+						'label'         => __( 'Button color', 'fl-builder' ),
 						'default'       => 'fff',
 						'show_reset'    => true,
 					),
 					'opacity' => array(
-                        'type'          => 'text',
-                        'label'         => __( 'Button color opacity', 'fl-builder' ),
+						'type'          => 'text',
+						'label'         => __( 'Button color opacity', 'fl-builder' ),
 						'default'       => '100',
 						'description'   => '%',
 						'placeholder'   => '100',
@@ -190,21 +190,21 @@ FLBuilder::register_module( 'TesseractLinkButtonModule', array(
 			'button-colors-hover' => array(
 				'title' => __( 'Button colors on hover', 'fl-builder' ),
 				'fields' => array(
-                    'text_color_hover'     => array(
-                        'type'          => 'color',
-                        'label'         => __( 'Text color', 'fl-builder' ),
+					'text_color_hover'     => array(
+						'type'          => 'color',
+						'label'         => __( 'Text color', 'fl-builder' ),
 						'default'       => '333',
 						'show_reset'    => true,
 					),
-                    'button_color_hover'     => array(
-                        'type'          => 'color',
-                        'label'         => __( 'Button color', 'fl-builder' ),
+					'button_color_hover'     => array(
+						'type'          => 'color',
+						'label'         => __( 'Button color', 'fl-builder' ),
 						'default'       => 'fff',
 						'show_reset'    => true,
 					),
 					'opacity_hover' => array(
-                        'type'          => 'text',
-                        'label'         => __( 'Button color opacity', 'fl-builder' ),
+						'type'          => 'text',
+						'label'         => __( 'Button color opacity', 'fl-builder' ),
 						'default'       => '100',
 						'description'   => '%',
 						'placeholder'   => '100',
@@ -217,8 +217,8 @@ FLBuilder::register_module( 'TesseractLinkButtonModule', array(
 				'title' => __( 'Display', 'fl-builder' ),
 				'fields' => array(
 					'align' => array(
-                        'type'          => 'select',
-                        'label'         => __( 'Alignment', 'fl-builder' ),
+						'type'          => 'select',
+						'label'         => __( 'Alignment', 'fl-builder' ),
 						'default'       => 'left',
 						'options'       => array(
 							'left' => 'Left',
@@ -227,8 +227,8 @@ FLBuilder::register_module( 'TesseractLinkButtonModule', array(
 						)
 					),
 					'padding_top' => array(
-                        'type'          => 'text',
-                        'label'         => __( 'Top padding', 'fl-builder' ),
+						'type'          => 'text',
+						'label'         => __( 'Top padding', 'fl-builder' ),
 						'default'       => '0',
 						'description'   => 'px',
 						'placeholder'   => '0',
@@ -236,8 +236,8 @@ FLBuilder::register_module( 'TesseractLinkButtonModule', array(
 						'size'          => '5'
 					),
 					'padding_bottom' => array(
-                        'type'          => 'text',
-                        'label'         => __( 'Bottom padding', 'fl-builder' ),
+						'type'          => 'text',
+						'label'         => __( 'Bottom padding', 'fl-builder' ),
 						'default'       => '0',
 						'description'   => 'px',
 						'placeholder'   => '0',
@@ -245,8 +245,8 @@ FLBuilder::register_module( 'TesseractLinkButtonModule', array(
 						'size'          => '5',
 					),
 					'padding_left' => array(
-                        'type'          => 'text',
-                        'label'         => __( 'Left padding', 'fl-builder' ),
+						'type'          => 'text',
+						'label'         => __( 'Left padding', 'fl-builder' ),
 						'default'       => '20',
 						'description'   => 'px',
 						'placeholder'   => '20',
@@ -254,8 +254,8 @@ FLBuilder::register_module( 'TesseractLinkButtonModule', array(
 						'size'          => '5'
 					),
 					'padding_right' => array(
-                        'type'          => 'text',
-                        'label'         => __( 'Right padding', 'fl-builder' ),
+						'type'          => 'text',
+						'label'         => __( 'Right padding', 'fl-builder' ),
 						'default'       => '20',
 						'description'   => 'px',
 						'placeholder'   => '20',
@@ -263,8 +263,8 @@ FLBuilder::register_module( 'TesseractLinkButtonModule', array(
 						'size'          => '5'
 					),
 					'border'     => array(
-                        'type'          => 'select',
-                        'label'         => __( 'Border', 'fl-builder' ),
+						'type'          => 'select',
+						'label'         => __( 'Border', 'fl-builder' ),
 						'default'       => 'none',
 						'options'       => array(
 							'none' => __( 'None', 'fl-builder' ),
@@ -303,21 +303,21 @@ FLBuilder::register_module( 'TesseractLinkButtonModule', array(
 								)
 							),
 						),
-                    ),
-                    'border_width'     => array(
-                        'type'          => 'text',
-                        'label'         => __( 'Border width', 'fl-builder' ),
+					),
+					'border_width'     => array(
+						'type'          => 'text',
+						'label'         => __( 'Border width', 'fl-builder' ),
 						'default'          => '1',
 					),
-                    'border_color'     => array(
-                        'type'          => 'color',
-                        'label'         => __( 'Border color', 'fl-builder' ),
+					'border_color'     => array(
+						'type'          => 'color',
+						'label'         => __( 'Border color', 'fl-builder' ),
 						'default'       => '000',
 						'show_reset'    => true,
 					),
-                    'border_radius'     => array(
-                        'type'          => 'text',
-                        'label'         => __( 'Border radius', 'fl-builder' ),
+					'border_radius'     => array(
+						'type'          => 'text',
+						'label'         => __( 'Border radius', 'fl-builder' ),
 						'default'          => '0',
 					),
 				),

@@ -32,6 +32,9 @@ $wc_headercart = (get_theme_mod('tesseract_woocommerce_headercart') == 1) ? true
 		
 <?php endif; ?>   
 
-	<?php if (is_plugin_active('woocommerce/woocommerce.php') && $wc_headercart) tesseract_wc_output_cart(); ?> 
+	<?php if (is_plugin_active('woocommerce/woocommerce.php') && $wc_headercart) {
+	tesseract_wc_output_cart();
+}
+?> 
 
 </div>
