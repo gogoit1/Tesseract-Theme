@@ -70,10 +70,13 @@ function tesseract_horizontal_footer_menu_additional_content($content) {
 					<h1 class="site-logo"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img src="<?php echo $logoImg; ?>" alt="logo" /></a></h1>
 				</div>
 
-			<?php else : ?>
+			<?php else {
+	: ?>
 
 				<div class="site-branding">
-					<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php echo get_bloginfo('blogname'); ?></a></h1>
+					<h1 class="site-title"><a href="<?php echo esc_url(home_url('/'));
+}
+?>" rel="home"><?php echo get_bloginfo('blogname'); ?></a></h1>
 				</div>
 
 			<?php endif;

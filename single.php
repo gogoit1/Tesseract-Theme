@@ -44,6 +44,8 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php
-		if ( ! $bplayout || ($bplayout == 'sidebar-left') || ($bplayout == 'sidebar-right')) get_sidebar();
+		if ( ! $bplayout || ($bplayout == 'sidebar-left') || ($bplayout == 'sidebar-right')) {
+			get_sidebar();
+		}
 	?>
 <?php get_footer(); ?>

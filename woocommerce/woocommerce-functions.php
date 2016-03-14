@@ -72,7 +72,8 @@ function woocommerce_header_add_to_cart_fragment($fragments) {
             <div class="cart-content-details">
                 <?php if (WC()->cart->cart_contents_count == 0) : ?>
                     <span>Your Shopping Cart is empty.</span>
-                <?php else: ?>
+                <?php else {
+	: ?>
                     <table class="cart-content-details-table">
                         <thead>
                             <tr>
@@ -83,7 +84,9 @@ function woocommerce_header_add_to_cart_fragment($fragments) {
                         </thead>
                         <tfoot>
                             <td></td>
-                            <td><?php echo WC()->cart->cart_contents_count; ?></td>
+                            <td><?php echo WC()->cart->cart_contents_count;
+}
+?></td>
                             <td class="right"><?php echo WC()->cart->get_cart_total(); ?></td>
                         </tfoot>
                         <tbody>
@@ -121,7 +124,8 @@ function tesseract_wc_output_cart() {
             <div class="cart-content-details">
                 <?php if (WC()->cart->cart_contents_count == 0) : ?>
                     <span>Your Shopping Cart is empty.</span>
-                <?php else: ?>
+                <?php else {
+	: ?>
                     <table class="cart-content-details-table">
                         <thead>
                             <tr>
@@ -132,7 +136,9 @@ function tesseract_wc_output_cart() {
                         </thead>
                         <tfoot>
                             <td></td>
-                            <td><?php echo WC()->cart->cart_contents_count; ?></td>
+                            <td><?php echo WC()->cart->cart_contents_count;
+}
+?></td>
                             <td class="right"><?php echo WC()->cart->get_cart_total(); ?></td>
                         </tfoot>
                         <tbody>
@@ -159,8 +165,9 @@ function tesseract_wc_output_cart() {
 //Get Woocommerce version number
 function tesseract_wc_version_number() {
         // If get_plugins() isn't available, require it
-	if ( ! function_exists('get_plugins'))
-		require_once(ABSPATH.'wp-admin/includes/plugin.php');
+	if ( ! function_exists('get_plugins')) {
+			require_once(ABSPATH.'wp-admin/includes/plugin.php');
+	}
 
         // Create the plugins folder and file variables
 	$plugin_folder = get_plugins('/'.'woocommerce');

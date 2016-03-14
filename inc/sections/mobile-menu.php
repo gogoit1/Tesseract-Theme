@@ -3,23 +3,23 @@
  * section HEADER COLORS
  */
 
-   	$wp_customize->add_section( 'tesseract_mobmenu' , array(
+   	$wp_customize->add_section('tesseract_mobmenu', array(
 		'title'      => __('Mobile Menu', 'tesseract'),
 		'priority'   => 7,
 		'panel'      => 'tesseract_header_options'
-	) );
+	));
 
-		$wp_customize->add_setting( 'tesseract_mobmenu_opener', array(
+		$wp_customize->add_setting('tesseract_mobmenu_opener', array(
 				'sanitize_callback' => 'tesseract_sanitize_checkbox',
 				'default' 			=> 0
-		) );
+		));
 
 			$wp_customize->add_control(
 				new WP_Customize_Control(
 					$wp_customize,
 					'tesseract_mobmenu_opener_control',
 					array(
-						'label'          => __( 'Check this to open mobile menu (this way you can see how it will look with your new mobile menu settings)', 'tesseract' ),
+						'label'          => __('Check this to open mobile menu (this way you can see how it will look with your new mobile menu settings)', 'tesseract'),
 						'section'        => 'tesseract_mobmenu',
 						'settings'       => 'tesseract_mobmenu_opener',
 						'type'           => 'checkbox',

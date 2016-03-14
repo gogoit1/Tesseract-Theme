@@ -403,8 +403,9 @@ function tesseract_sanitize_select($value) {
 
 		$tesseract_menu_selector_items = array();
 		$item_keys = array('none');
-		foreach ($tesseract_menu_selector_menus as $items)
-			array_push($item_keys, $items->slug);
+		foreach ($tesseract_menu_selector_menus as $items) {
+					array_push($item_keys, $items->slug);
+		}
 
 	endif;
 
@@ -467,8 +468,9 @@ function tesseract_sanitize_rgba($value) {
 	preg_match("/#([a-f]|[A-F]|[0-9]){3}(([a-f]|[A-F]|[0-9]){3})?\b/", $value, $match);
 	$hex = $match ? true : false;
 
-	if ($rgba || $hex)
-		return $value;
+	if ($rgba || $hex) {
+			return $value;
+	}
 
 }
 

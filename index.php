@@ -38,11 +38,17 @@ get_header();
 
 			<?php endwhile; ?>
 
-			<?php if (is_home())tesseract_paging_nav(); ?>
+			<?php if (is_home()) {
+	tesseract_paging_nav();
+}
+?>
 
-		<?php else : ?>
+		<?php else {
+	: ?>
 
-			<?php get_template_part('content', 'none'); ?>
+			<?php get_template_part('content', 'none');
+}
+?>
 
 		<?php endif; ?>
 

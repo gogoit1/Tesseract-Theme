@@ -11,7 +11,10 @@
 
 $layout = get_theme_mod('tesseract_woocommerce_loop_layout');
 
-if ( ! defined('ABSPATH')) exit; // Exit if accessed directly
+if ( ! defined('ABSPATH')) {
+	exit;
+}
+// Exit if accessed directly
 
 get_header('shop'); ?>
 
@@ -87,8 +90,9 @@ get_header('shop'); ?>
 		 *
 		 * @hooked woocommerce_get_sidebar - 10
 		 */
-		if (($layout == 'sidebar-left') || ($layout == 'sidebar-right'))
-			do_action('woocommerce_sidebar');
+		if (($layout == 'sidebar-left') || ($layout == 'sidebar-right')) {
+					do_action('woocommerce_sidebar');
+		}
 	?>
 
 <?php get_footer('shop'); ?>
