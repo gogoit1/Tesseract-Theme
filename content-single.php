@@ -6,9 +6,9 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php if ( my_theme_show_page_header() ) : ?>
+	<?php if (my_theme_show_page_header()) : ?>
 		<header class="entry-header">
-			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
 		</header><!-- .entry-header -->
 	<?php endif; ?>
 
@@ -18,10 +18,10 @@
 		</div><!-- .entry-meta -->
 		<?php the_content(); ?>
 		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'tesseract' ),
+			wp_link_pages(array(
+				'before' => '<div class="page-links">'.__('Pages:', 'tesseract'),
 				'after'  => '</div>',
-			) );
+			));
 		?>
 	</div><!-- .entry-content -->
 

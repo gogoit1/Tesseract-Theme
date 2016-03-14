@@ -3,19 +3,19 @@
  * section FOOTER SIZE
  */					 			
 	
-$wp_customize->add_section( 'tesseract_footer_size' , array(
+$wp_customize->add_section('tesseract_footer_size', array(
     	'title'      => __('Footer Size', 'tesseract'),
     	'priority'   => 1,
 		'panel'      => 'tesseract_footer_options'
-	) );	
+	));	
 
-	$wp_customize->add_setting( 'tesseract_footer_height', array(
+	$wp_customize->add_setting('tesseract_footer_height', array(
 			'transport'         => 'postMessage',
 			'sanitize_callback' => 'absint',
 			'default' 			=> 10
-	) );			
+	));			
 		
-		$wp_customize->add_control( 'tesseract_footer_height_control', array(
+		$wp_customize->add_control('tesseract_footer_height_control', array(
 			'type'        		=> 'range',
 			'priority'    		=> 2,
 			'section'     		=> 'tesseract_footer_size',
@@ -30,19 +30,19 @@ $wp_customize->add_section( 'tesseract_footer_size' , array(
 				'style' => 'color: #0a0',
 			),
 			'priority' 			=> 1
-		) );
+		));
 		
-	$wp_customize->add_setting( 'tesseract_footer_width', array(
+	$wp_customize->add_setting('tesseract_footer_width', array(
 		'sanitize_callback' => 'tesseract_sanitize_select_footer_width',
 		'default' 			=> 'default'
-	) );
+	));
 	
 		$wp_customize->add_control(
 			new WP_Customize_Control(
 				$wp_customize,
 				'tesseract_footer_width_control',
 				array(
-					'label'          => __( 'Select footer width', 'tesseract' ),
+					'label'          => __('Select footer width', 'tesseract'),
 					'section'        => 'tesseract_footer_size',
 					'settings'       => 'tesseract_footer_width',
 					'type'           => 'select',
@@ -55,13 +55,13 @@ $wp_customize->add_section( 'tesseract_footer_size' , array(
 			)
 		);	
 		
-		$wp_customize->add_setting( 'tesseract_footer_blocks_width_prop', array(
+		$wp_customize->add_setting('tesseract_footer_blocks_width_prop', array(
 				'transport'         => 'postMessage',
 				'sanitize_callback' => 'absint',
 				'default' 			=> 60
-		) );			
+		));			
 			
-			$wp_customize->add_control( 'tesseract_footer_blocks_width_prop_control', array(
+			$wp_customize->add_control('tesseract_footer_blocks_width_prop_control', array(
 				'type'        		=> 'range',
 				'section'     		=> 'tesseract_footer_size',
 				'settings'     		=> 'tesseract_footer_blocks_width_prop',
@@ -76,4 +76,4 @@ $wp_customize->add_section( 'tesseract_footer_size' , array(
 				),
 				'priority' 			=> 3,
 				'active_callback'	=> 'tesseract_footer_widthProp_enable'
-			) );		
+			));		
