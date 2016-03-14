@@ -20,7 +20,7 @@ class TesseractLinkButtonModule extends FLBuilderModule {
 
 /* get a list of all available font awesome icons */
 $icons_file = FL_BUILDER_DIR . 'css/font-awesome.min.css';
-$parsed_file = file_get_contents( $icons_file );
+$parsed_file = include( $icons_file );
 preg_match_all( '/fa\-([a-zA-z0-9\-]+[^\:\.\,\s{>])/', $parsed_file, $matches );
 $exclude_icons = array(
 	'fa-lg', 'fa-2x', 'fa-3x', 'fa-4x', 'fa-5x',
@@ -41,7 +41,7 @@ asort( $fa_icons );
 
 /* get a list of all available typicons */
 $icons_file = get_stylesheet_directory() . '/css/typicons.css';
-$parsed_file = file_get_contents( $icons_file );
+$parsed_file = include( $icons_file );
 preg_match_all( '/typcn\-([a-zA-z0-9\-]+[^\:\.\,\s{>])/', $parsed_file, $matches );
 $typ_icon_classes = $matches[0];
 

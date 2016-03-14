@@ -60,19 +60,19 @@ foreach ( $all_post_types as $type => $obj ) {
 
 /* get order by options */
 $orderby_options = array(
-	'none' => _( 'No order' ),
-	'ID' => _( 'Order by post id' ),
-	'author' => _( 'Order by author' ),
-	'title' => _( 'Order by title' ),
-	'name' => _( 'Order by post name (post slug)' ),
-	'type' => _( 'Order by post type' ),
-	'date' => _( 'Order by date' ),
-	'modified' => _( 'Order by last modified date' ),
-	'parent' => _( 'Order by post/page parent id' ),
-	'rand' => _( 'Random order' ),
-	'comment_count' => _( 'Order by number of comments' ),
-	'menu_order' => _( 'Order by page order' ),
-	'post__in' => _( 'Preserve post ID order given in Specific IDs field' ),
+	'none' => __( 'No order', 'tesseract' ),
+	'ID' => __( 'Order by post id', 'tesseract' ),
+	'author' => __( 'Order by author', 'tesseract' ),
+	'title' => __( 'Order by title', 'tesseract' ),
+	'name' => __( 'Order by post name (post slug)', 'tesseract' ),
+	'type' => __( 'Order by post type', 'tesseract' ),
+	'date' => __( 'Order by date', 'tesseract' ),
+	'modified' => __( 'Order by last modified date', 'tesseract' ),
+	'parent' => __( 'Order by post/page parent id', 'tesseract' ),
+	'rand' => __( 'Random order', 'tesseract' ),
+	'comment_count' => __( 'Order by number of comments', 'tesseract' ),
+	'menu_order' => __( 'Order by page order', 'tesseract' ),
+	'post__in' => __( 'Preserve post ID order given in Specific IDs field', 'tesseract' ),
 );
 
 /* get all posts */
@@ -129,14 +129,14 @@ FLBuilder::register_module( 'TesseractBlogModule', array(
 						'label' => __( 'Order', 'tesseract' ),
 						'default' => 'DESC',
 						'options' => array(
-							'DESC' => __( 'Descending' ),
-							'ASC' => __( 'Ascending' )
+							'DESC' => __( 'Descending', 'tesseract' ),
+							'ASC' => __( 'Ascending', 'tesseract' )
 						)
 					),
 					'ids' => array(
 						'type' => 'text',
 						'label' => 'Specific IDs',
-						'description' => __( 'List the IDs separated by comma that will be displayed (leave blank to disable)' )
+						'description' => __( 'List the IDs separated by comma that will be displayed (leave blank to disable)', 'tesseract' )
 					)
 				)
 			),
