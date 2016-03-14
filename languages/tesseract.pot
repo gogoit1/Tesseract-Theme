@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tesseract 2.5.2\n"
 "Report-Msgid-Bugs-To: https://github.com/seb86/Tesseract-Theme/issues\n"
-"POT-Creation-Date: 2016-03-12 00:16+0100\n"
+"POT-Creation-Date: 2016-03-14 18:48+0100\n"
 "PO-Revision-Date: 2015-04-02 14:08+0100\n"
 "Last-Translator: Gabor Lippert <gabor.lippert@gmail.com>\n"
 "Language-Team: \n"
@@ -68,22 +68,22 @@ msgid ""
 "different keywords."
 msgstr ""
 
-#: content-none.php:28
+#: content-none.php:29
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
 
-#: content-page.php:36 content-single.php:22 content.php:52
+#: content-page.php:36 content-single.php:22 content.php:56
 msgid "Pages:"
 msgstr ""
 
-#: content.php:43
+#: content.php:47
 #, php-format
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: dismissible_notice/src/Caldera_Warnings_Dismissible_Notice.php:120
+#: dismissible_notice/src/Caldera_Warnings_Dismissible_Notice.php:124
 msgid "Dismiss this notice."
 msgstr ""
 
@@ -107,16 +107,34 @@ msgstr ""
 msgid "Appears on the left."
 msgstr ""
 
-#: functions.php:850
+#: functions.php:840
 msgid "Read More ..."
 msgstr ""
 
-#: functions.php:878
+#: functions.php:868
 msgctxt "Google font: on or off"
 msgid "on"
 msgstr ""
 
-#: header.php:72
+#: functions.php:952
+msgid ""
+"To edit the \"Theme by Tesseract\" at the bottom of your website you can get "
+"the Unbranding Plugin. <b>Thanks for your support!</b>"
+msgstr ""
+
+#: functions.php:953
+msgid "The Tesseract Team"
+msgstr ""
+
+#: functions.php:953
+msgid "maybe later"
+msgstr ""
+
+#: functions.php:953
+msgid "check it out"
+msgstr ""
+
+#: header.php:86
 msgid "Skip to content"
 msgstr ""
 
@@ -580,7 +598,7 @@ msgstr ""
 #: inc/beaver-builder-modules/blog/blog-module.php:100
 #: inc/beaver-builder-modules/heading/heading-module.php:24
 #: inc/beaver-builder-modules/link-button/link-button-module.php:57
-#: inc/beaver-builder-modules/map/map-module.php:28
+#: inc/beaver-builder-modules/map/map-module.php:29
 msgid "General"
 msgstr ""
 
@@ -645,14 +663,14 @@ msgstr ""
 #: inc/beaver-builder-modules/blog/blog-module.php:160
 #: inc/beaver-builder-modules/blog/blog-module.php:169
 #: inc/beaver-builder-modules/blog/blog-module.php:178
-#: inc/beaver-builder-modules/map/map-module.php:38
+#: inc/beaver-builder-modules/map/map-module.php:39
 msgid "Yes"
 msgstr ""
 
 #: inc/beaver-builder-modules/blog/blog-module.php:161
 #: inc/beaver-builder-modules/blog/blog-module.php:170
 #: inc/beaver-builder-modules/blog/blog-module.php:179
-#: inc/beaver-builder-modules/map/map-module.php:39
+#: inc/beaver-builder-modules/map/map-module.php:40
 msgid "No"
 msgstr ""
 
@@ -693,7 +711,7 @@ msgstr ""
 
 #: inc/beaver-builder-modules/heading/heading-module.php:27
 #: inc/beaver-builder-modules/link-button/link-button-module.php:217
-#: inc/beaver-builder-modules/map/map-module.php:31
+#: inc/beaver-builder-modules/map/map-module.php:32
 msgid "Display"
 msgstr ""
 
@@ -914,43 +932,43 @@ msgstr ""
 msgid "Google Map"
 msgstr ""
 
-#: inc/beaver-builder-modules/map/map-module.php:35
+#: inc/beaver-builder-modules/map/map-module.php:36
 msgid "Full width map?"
 msgstr ""
 
-#: inc/beaver-builder-modules/map/map-module.php:60
+#: inc/beaver-builder-modules/map/map-module.php:61
 msgid "Width"
 msgstr ""
 
-#: inc/beaver-builder-modules/map/map-module.php:61
+#: inc/beaver-builder-modules/map/map-module.php:62
 msgid "Width in pixels"
 msgstr ""
 
-#: inc/beaver-builder-modules/map/map-module.php:66
+#: inc/beaver-builder-modules/map/map-module.php:67
 msgid "Height"
 msgstr ""
 
-#: inc/beaver-builder-modules/map/map-module.php:67
+#: inc/beaver-builder-modules/map/map-module.php:68
 msgid "Height in pixels"
 msgstr ""
 
-#: inc/beaver-builder-modules/map/map-module.php:72
+#: inc/beaver-builder-modules/map/map-module.php:73
 msgid "Float"
 msgstr ""
 
-#: inc/beaver-builder-modules/map/map-module.php:73
+#: inc/beaver-builder-modules/map/map-module.php:74
 msgid "none"
 msgstr ""
 
-#: inc/beaver-builder-modules/map/map-module.php:82
+#: inc/beaver-builder-modules/map/map-module.php:83
 msgid "Zoom Level"
 msgstr ""
 
-#: inc/beaver-builder-modules/map/map-module.php:99
+#: inc/beaver-builder-modules/map/map-module.php:100
 msgid "Search location"
 msgstr ""
 
-#: inc/beaver-builder-modules/map/map-module.php:100
+#: inc/beaver-builder-modules/map/map-module.php:101
 msgid "Enter an address. eg. 123 Main st, Los Angeles, CA"
 msgstr ""
 
@@ -1015,34 +1033,66 @@ msgstr ""
 msgid "Footer Hovered Link Color"
 msgstr ""
 
-#: inc/sections/footer-content.php:7
+#: inc/sections/footer-content.php:6
 msgid "Footer Content"
 msgstr ""
 
-#: inc/sections/footer-content.php:25
+#: inc/sections/footer-content.php:22
 msgid "Left Footer Area:"
 msgstr ""
 
-#: inc/sections/footer-content.php:26
+#: inc/sections/footer-content.php:23
 msgid "Choose the content to be displayed on the left area of the footer."
 msgstr ""
 
-#: inc/sections/footer-content.php:81
+#: inc/sections/footer-content.php:44 inc/sections/footer-content.php:119
+#: inc/sections/header-content.php:47
+msgid "Nothing"
+msgstr ""
+
+#: inc/sections/footer-content.php:45 inc/sections/footer-content.php:121
+msgid "Logo"
+msgstr ""
+
+#: inc/sections/footer-content.php:46 inc/sections/footer-content.php:122
+#: inc/sections/header-content.php:49
+msgid "Social Icons"
+msgstr ""
+
+#: inc/sections/footer-content.php:47 inc/sections/footer-content.php:123
+#: inc/sections/header-content.php:50
+msgid "Search Bar"
+msgstr ""
+
+#: inc/sections/footer-content.php:72
 msgid "Footer Left Menu"
 msgstr ""
 
-#: inc/sections/footer-content.php:113 inc/sections/footer-content.php:153
+#: inc/sections/footer-content.php:101 inc/sections/footer-content.php:137
 msgid "Right Footer Area:"
 msgstr ""
 
-#: inc/sections/footer-content.php:114
+#: inc/sections/footer-content.php:102
 msgid "Choose the content to be displayed on the right area of the footer."
 msgstr ""
 
-#: inc/sections/footer-content.php:154
+#: inc/sections/footer-content.php:118
+msgid "Theme by Tesseract"
+msgstr ""
+
+#: inc/sections/footer-content.php:120
+msgid "Text or HTML"
+msgstr ""
+
+#: inc/sections/footer-content.php:124 inc/sections/header-content.php:51
+msgid "Menu"
+msgstr ""
+
+#: inc/sections/footer-content.php:138
+#, php-format
 msgid ""
-"<a href=\"http://tesseracttheme.com/unbranding-plugin-3/\" target=\"_blank"
-"\"><img src=\"https://s3.amazonaws.com/tesseracttheme/unlock.png\" /></a>"
+"<a href=\"%s\" target=\"_blank\"><img src=\"https://s3.amazonaws.com/"
+"tesseracttheme/unlock.png\" /></a>"
 msgstr ""
 
 #: inc/sections/footer-logo.php:7
@@ -1096,24 +1146,8 @@ msgid ""
 "Choose the content to be displayed in the right block of the header area"
 msgstr ""
 
-#: inc/sections/header-content.php:47
-msgid "Nothing"
-msgstr ""
-
 #: inc/sections/header-content.php:48
 msgid "Buttons"
-msgstr ""
-
-#: inc/sections/header-content.php:49
-msgid "Social Icons"
-msgstr ""
-
-#: inc/sections/header-content.php:50
-msgid "Search Bar"
-msgstr ""
-
-#: inc/sections/header-content.php:51
-msgid "Menu"
 msgstr ""
 
 #: inc/sections/header-content.php:70
