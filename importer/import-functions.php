@@ -99,8 +99,7 @@ function tesseract_import_packages( $packages ) {
 		$slug = $package['details']['slug'];
 		if ( ! empty( $packages_for_importing ) && in_array( $slug, $packages_for_importing ) ) {
 			tesseract_import_package( $package );
-		}
-		elseif ( ! empty( $packages_for_updating ) && in_array( $slug, $packages_for_updating ) ) {
+		} elseif ( ! empty( $packages_for_updating ) && in_array( $slug, $packages_for_updating ) ) {
 			tesseract_delete_package_with_slug( $slug );
 			tesseract_import_package( $package );
 		}

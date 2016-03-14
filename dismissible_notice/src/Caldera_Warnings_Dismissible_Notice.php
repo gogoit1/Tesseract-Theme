@@ -70,7 +70,9 @@ class Caldera_Warnings_Dismissible_Notice {
 	 */
 	public static function notice( $message,  $error = true, $cap_check = 'activate_plugins', $ignore_key = false ) 
   {
-		if ( !current_user_can( $cap_check ) ) return;
+		if ( !current_user_can( $cap_check ) ) {
+			return;
+		}
 		$user_id = get_current_user_id();
 		if ( ! is_string( $ignore_key ) ) {
 			// cal_wd_ig_3911b2583433f696e5813a503bbb2e65
@@ -81,7 +83,9 @@ class Caldera_Warnings_Dismissible_Notice {
 
 		$dissmised = time() - get_user_meta( $user_id, self::$ignore_key, time() ) < (60*60*24*30); // Nag every 30 days
 
-		if ( $dissmised ) return;
+		if ( $dissmised ) {
+			return;
+		}
     
 		if ( $error ) {
 			$class = 'error';
