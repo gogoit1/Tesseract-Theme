@@ -52,56 +52,56 @@
 					'style' => 'color: #0a0',
 				),
 				'active_callback' => 'tesseract_show_header_opacity_control'
-			) );
+			));
 
-		$wp_customize->add_setting( 'tesseract_header_colors_text_color', array(
+		$wp_customize->add_setting('tesseract_header_colors_text_color', array(
 				'transport'         => 'postMessage',
 				'sanitize_callback' => 'sanitize_hex_color',
 				'default' 			=> '#ffffff'
-		) );
+		));
 
 			$wp_customize->add_control(
 				new WP_Customize_Color_Control(
 				$wp_customize,
 				'tesseract_header_colors_text_color_control',
 				array(
-					'label'      => __( 'Header Text Color', 'tesseract' ),
+					'label'      => __('Header Text Color', 'tesseract'),
 					'section'    => 'tesseract_header_colors',
 					'settings'   => 'tesseract_header_colors_text_color',
 					'priority'   => 2
 				) )
 			);
 
-		$wp_customize->add_setting( 'tesseract_header_colors_link_color', array(
+		$wp_customize->add_setting('tesseract_header_colors_link_color', array(
 				'transport'         => 'postMessage',
 				'sanitize_callback' => 'sanitize_hex_color',
 				'default' 			=> '#ffffff'
-		) );
+		));
 
 			$wp_customize->add_control(
 				new WP_Customize_Color_Control(
 				$wp_customize,
 				'tesseract_header_colors_link_color_control',
 				array(
-					'label'      => __( 'Header Link Color', 'tesseract' ),
+					'label'      => __('Header Link Color', 'tesseract'),
 					'section'    => 'tesseract_header_colors',
 					'settings'   => 'tesseract_header_colors_link_color',
 					'priority' 	 => 3
 				) )
 			);
 
-		$wp_customize->add_setting( 'tesseract_header_colors_link_hover_color', array(
+		$wp_customize->add_setting('tesseract_header_colors_link_hover_color', array(
 				'transport'         => 'postMessage',
 				'sanitize_callback' => 'sanitize_hex_color',
 				'default' 			=> '#d1ecff'
-		) );
+		));
 
 			$wp_customize->add_control(
 				new WP_Customize_Color_Control(
 				$wp_customize,
 				'tesseract_header_colors_link_hover_color_control',
 				array(
-					'label'      => __( 'Header Hovered Link Color', 'tesseract' ),
+					'label'      => __('Header Hovered Link Color', 'tesseract'),
 					'section'    => 'tesseract_header_colors',
 					'settings'   => 'tesseract_header_colors_link_hover_color',
 					'priority'   => 4
