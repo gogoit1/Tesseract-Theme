@@ -1,4 +1,7 @@
 <?php
+// Require global functions that are used both the front and admin side.
+require_once(get_template_directory().'/inc/global-functions.php');
+
 /**
  * Implement the Menus.
  */
