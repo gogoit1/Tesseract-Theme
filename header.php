@@ -6,6 +6,40 @@
  *
  * @package Tesseract
  */
+
+$headright_content = get_theme_mod('tesseract_header_right_content');
+$wooheader = (get_theme_mod('tesseract_woocommerce_headercart') == 1) ? true : false;
+
+$rightclass = '';
+
+if (($headright_content) && ($headright_content !== 'nothing')) {
+	$rightclass = $wooheader ? $headright_content.' is-right is-woo ' : $headright_content.' is-right no-woo ';
+} else if (($headright_content == 'nothing') && $wooheader) {
+	$rightclass = $wooheader ? $headright_content.' no-right is-woo ' : $headright_content.' no-right no-woo ';
+}
+
+$opValue = get_theme_mod('tesseract_header_colors_bck_color_opacity');
+
+$headpos = (is_front_page() && (tesseract_is_numeric($opValue) && (intval($opValue) < 100))) ? 'pos-absolute' : 'pos-relative';
+
+$logoImg = get_theme_mod('tesseract_header_logo_image');
+$blogname = get_bloginfo('blogname');
+$hmenusize = get_theme_mod('tesseract_header_width');
+
+$mmdisplay = get_theme_mod('tesseract_mobmenu_opener');
+$mmdClass = ($mmdisplay == 1) ? 'showit' : 'hideit';
+
+$hmenusize_class = ($hmenusize == 'fullwidth') ? 'fullwidth' : 'autowidth';
+
+if ( ! $logoImg && $blogname) {
+	$brand_content = 'blogname';
+}
+if ($logoImg) {
+	$brand_content = 'logo';
+}
+if ( ! $logoImg && ! $blogname) {
+	$brand_content = 'no-brand';
+}
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -26,83 +60,11 @@
 
 </head>
 
-<?php // Additional body classes
-$bodyClass = (version_compare($wp_version, '4.0.0', '>') && is_customize_preview()) ? 'backend' : 'frontend';
-
-$slayout = get_theme_mod('tesseract_search_results_layout');
-
-$bplayout = get_theme_mod('tesseract_blog_post_layout');
-
-if ((is_page()) && (has_post_thumbnail())) {
-	$bodyClass .= ' tesseract-featured';
-}
-
-if (is_plugin_active('beaver-builder-lite-version/fl-builder.php') || is_plugin_active('beaver-builder/fl-builder.php')) {
-	$bodyClass .= ' beaver-on';
-}
-
-$opValue = get_theme_mod('tesseract_header_colors_bck_color_opacity');
-
-$header_bckOpacity = is_numeric($opValue) ? TRUE : FALSE;
-
-if (is_front_page() && ($header_bckOpacity && (intval($opValue) < 100))) {
-	$bodyClass .= ' transparent-header';
-}
-
-if (is_search()) {
-	if ($slayout == 'fullwidth') {
-		$bodyClass .= ' fullwidth';
-	}
-	if ($slayout == 'sidebar-right') {
-		$bodyClass .= ' sidebar-right';
-	}
-	} elseif (is_single()) {
-	if ($bplayout == 'fullwidth') {
-		$bodyClass .= ' fullwidth';
-	}
-	if ($bplayout == 'sidebar-right') {
-		$bodyClass .= ' sidebar-right';
-	}
-	}
-
-?>
-
-<body <?php body_class($bodyClass); ?>>
-<?php $headright_content = get_theme_mod('tesseract_header_right_content');
-$wooheader = (get_theme_mod('tesseract_woocommerce_headercart') == 1) ? true : false;
-$rightclass = '';
-if (($headright_content) && ($headright_content !== 'nothing')) {
-	$rightclass = $wooheader ? $headright_content.' is-right is-woo ' : $headright_content.' is-right no-woo ';
-} else if (($headright_content == 'nothing') && $wooheader) {
-	$rightclass = $wooheader ? $headright_content.' no-right is-woo ' : $headright_content.' no-right no-woo ';
-}
-
-$headpos = (is_front_page() && ($header_bckOpacity && (intval($opValue) < 100))) ? 'pos-absolute' : 'pos-relative';
-?>
+<body <?php body_class(); ?>>
 
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e('Skip to content', 'tesseract'); ?></a>
 
-	<?php
-	$logoImg = get_theme_mod('tesseract_header_logo_image');
-	$blogname = get_bloginfo('blogname');
-	$hmenusize = get_theme_mod('tesseract_header_width');
-
-	$mmdisplay = get_theme_mod('tesseract_mobmenu_opener');
-	$mmdClass = ($mmdisplay == 1) ? 'showit' : 'hideit';
-
-	$hmenusize_class = ($hmenusize == 'fullwidth') ? 'fullwidth' : 'autowidth';
-
-	if ( ! $logoImg && $blogname) {
-		$brand_content = 'blogname';
-	}
-	if ($logoImg) {
-		$brand_content = 'logo';
-	}
-	if ( ! $logoImg && ! $blogname) {
-		$brand_content = 'no-brand';
-	}
-	?>
   <header id="masthead" class="site-header <?php echo $rightclass.$headpos.' '.'menusize-'.$hmenusize_class.' '; echo get_header_image() ? 'is-header-image' : 'no-header-image'; ?>" role="banner">
     <div id="site-banner" class="cf<?php echo ' '.$headright_content.' '.$brand_content; ?>">
       <div id="site-banner-main" class="<?php echo (($headright_content) && ($headright_content !== 'nothing')) ? 'is-right' : 'no-right'; ?>">

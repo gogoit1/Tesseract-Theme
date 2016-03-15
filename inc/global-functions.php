@@ -21,3 +21,7 @@ function tesseract_hex2rgb($colour) {
 
   return array('red' => $r, 'green' => $g, 'blue' => $b);
 }
+
+function tesseract_is_numeric($value) {
+  return is_numeric($value) ? TRUE : FALSE;
+}

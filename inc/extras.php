@@ -22,10 +22,13 @@ add_filter('wp_page_menu_args', 'tesseract_page_menu_args');
 /**
  * Adds custom classes to the array of body classes.
  *
+ * @global $wp_version
  * @param array $classes Classes for the body element.
  * @return array
  */
 function tesseract_body_classes($classes) {
+	global $wp_version;
+
 	// Adds a .group-blog class to blogs with more than 1 published author.
 	if (is_multi_author()) {
 		$classes[] = 'group-blog';
@@ -33,7 +36,45 @@ function tesseract_body_classes($classes) {
 
 	// Adds a .full-width-page class to posts without sidebar.
 	if ( ! is_active_sidebar('sidebar-1')) {
-	    $classes[] = 'full-width-page';
+		$classes[] = 'full-width-page';
+	}
+
+	$bodyClass = (version_compare($wp_version, '4.0.0', '>') && is_customize_preview()) ? 'backend' : 'frontend';
+
+	$search_layout = get_theme_mod('tesseract_search_results_layout');
+
+	$bplayout = get_theme_mod('tesseract_blog_post_layout');
+
+	if ((is_page()) && (has_post_thumbnail())) {
+		$bodyClass .= ' tesseract-featured';
+	}
+
+	if (is_plugin_active('beaver-builder-lite-version/fl-builder.php') || is_plugin_active('beaver-builder/fl-builder.php')) {
+		$bodyClass .= ' beaver-on';
+	}
+
+	$opValue = get_theme_mod('tesseract_header_colors_bck_color_opacity');
+
+	$header_bckOpacity = tesseract_is_numeric($opValue) ? TRUE : FALSE;
+
+	if (is_front_page() && ($header_bckOpacity && (intval($opValue) < 100))) {
+		$bodyClass .= ' transparent-header';
+	}
+
+	if (is_search()) {
+		if ($search_layout == 'fullwidth') {
+			$bodyClass .= ' fullwidth';
+		}
+		if ($search_layout == 'sidebar-right') {
+			$bodyClass .= ' sidebar-right';
+		}
+	} elseif (is_single()) {
+		if ($bplayout == 'fullwidth') {
+			$bodyClass .= ' fullwidth';
+		}
+		if ($bplayout == 'sidebar-right') {
+			$bodyClass .= ' sidebar-right';
+		}
 	}
 
 	return $classes;

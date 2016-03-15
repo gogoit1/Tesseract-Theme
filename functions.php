@@ -256,7 +256,7 @@ function tesseract_fonts_url() {
 require(get_template_directory().'/inc/init-theme.php');
 
 // Initialize Theme for Admin
-if ( is_admin() ) {
+if (is_admin()) {
   require(get_template_directory().'/inc/admin/init-theme-admin.php');
 }
 
