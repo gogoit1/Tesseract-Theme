@@ -7,11 +7,9 @@
  * @package Tesseract
  */
 ?>
-
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-
 		<?php
 		$additional = get_theme_mod('tesseract_footer_additional_content') ? true : false;
 

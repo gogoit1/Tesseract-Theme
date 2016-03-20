@@ -8,6 +8,25 @@
 include_once(ABSPATH.'wp-admin/includes/plugin.php');
 
 /**
+ * The current version of the theme.
+ */
+define( 'TESSERACT_VERSION', '2.5.3' );
+
+/**
+ * The minimum version of WordPress required for Tesseract.
+ */
+define( 'TESSERACT_MIN_WP_VERSION', '4.2' );
+
+/**
+ * The suffix to use for scripts.
+ */
+if ( ( defined( 'SCRIPT_DEBUG' ) && true === SCRIPT_DEBUG ) ) {
+	define( 'TESSERACT_SUFFIX', '' );
+} else {
+	define( 'TESSERACT_SUFFIX', '.min' );
+}
+
+/**
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset($content_width)) {
@@ -35,7 +54,7 @@ if ( ! function_exists('tesseract_setup')) {
     add_theme_support('automatic-feed-links');
 
     // Add tyles the visual editor to resemble the theme style.
-    add_editor_style(array('css/editor-style.css', tesseract_fonts_url()));
+    add_editor_style(array('css/editor-style' . TESSERACT_SUFFIX . '.css', tesseract_fonts_url()));
 
     /*
      * Let WordPress manage the document title.
@@ -122,44 +141,44 @@ function tesseract_scripts() {
 	global $wp_styles;
 
 	// Enqueue default style
-	wp_enqueue_style('tesseract-style', get_stylesheet_uri(), array(), '1.0.0');
+	wp_enqueue_style('tesseract-style', get_stylesheet_uri(), array(), TESSERACT_VERSION);
 
 	// Google fonts
-	wp_enqueue_style('tesseract-fonts', tesseract_fonts_url(), array(), '1.0.0');
+	wp_enqueue_style('tesseract-fonts', tesseract_fonts_url(), array(), TESSERACT_VERSION);
 
   // Social icons style
-	wp_enqueue_style('tesseract-icons', get_template_directory_uri().'/css/typicons.css', array(), '1.0.0');
+	wp_enqueue_style('tesseract-icons', get_template_directory_uri().'/css/typicons' . TESSERACT_SUFFIX . '.css', array(), TESSERACT_VERSION);
 
 	/* only enqueue font-awesome stylesheet if not already enqueued */
 	if (array_search('font-awesome', $wp_styles->queue) === false) {
-		wp_enqueue_style('fontawesome', get_template_directory_uri().'/css/font-awesome.min.css', array(), '4.4.0');
+		wp_enqueue_style('fontawesome', get_template_directory_uri().'/css/font-awesome' . TESSERACT_SUFFIX . '.css', array(), '4.4.0');
 	}
 
   // Horizontal menu style
-	wp_enqueue_style('tesseract-site-banner', get_template_directory_uri().'/css/site-banner.css', array('tesseract-style'), '1.0.0');
-	wp_enqueue_style('tesseract-footer-banner', get_template_directory_uri().'/css/footer-banner.css', array('tesseract-style'), '1.0.0');
+	wp_enqueue_style('tesseract-site-banner', get_template_directory_uri().'/css/site-banner' . TESSERACT_SUFFIX . '.css', array('tesseract-style'), TESSERACT_VERSION);
+	wp_enqueue_style('tesseract-footer-banner', get_template_directory_uri().'/css/footer-banner' . TESSERACT_SUFFIX . '.css', array('tesseract-style'), TESSERACT_VERSION);
 	wp_enqueue_style('dashicons');
-	wp_enqueue_style('tesseract-sidr-style', get_template_directory_uri().'/css/jquery.sidr.css', array('tesseract-style'), '1.0.0');
+	wp_enqueue_style('tesseract-sidr-style', get_template_directory_uri().'/css/jquery.sidr' . TESSERACT_SUFFIX . '.css', array('tesseract-style'), TESSERACT_VERSION);
 
 	// Fittext
-	wp_enqueue_script('tesseract-fittext', get_template_directory_uri().'/js/jquery.fittext.js', array('jquery'), '1.0.0', true);
+	wp_enqueue_script('tesseract-fittext', get_template_directory_uri().'/js/jquery.fittext' . TESSERACT_SUFFIX . '.js', array('jquery'), TESSERACT_VERSION, true);
 
 	//Mobile menu
-	wp_enqueue_script('tesseract-sidr', get_template_directory_uri().'/js/jquery.sidr.min.js', array('tesseract-fittext'), '1.0.0', true);
+	wp_enqueue_script('tesseract-sidr', get_template_directory_uri().'/js/jquery.sidr' . TESSERACT_SUFFIX . '.js', array('tesseract-fittext'), TESSERACT_VERSION, true);
 
 	// Modernizr for old browsers
-	wp_enqueue_script('tesseract-modernizr', get_template_directory_uri().'/js/modernizr.custom.min.js', array(), '1.0.0', false);
+	wp_enqueue_script('tesseract-modernizr', get_template_directory_uri().'/js/modernizr.custom' . TESSERACT_SUFFIX . '.js', array(), TESSERACT_VERSION, false);
 
   // JS helpers (This is also the place where we call the jQuery in array)
-	wp_enqueue_script('tesseract-helpers-functions', get_template_directory_uri().'/js/helpers-functions.js', array('jquery', 'tesseract-sidr'), '1.0.0', true);
-	wp_enqueue_script('tesseract-helpers', get_template_directory_uri().'/js/helpers.js', array('jquery', 'tesseract-helpers-functions'), '1.0.0', true);
+	wp_enqueue_script('tesseract-helpers-functions', get_template_directory_uri().'/js/helpers-functions' . TESSERACT_SUFFIX . '.js', array('jquery', 'tesseract-sidr'), TESSERACT_VERSION, true);
+	wp_enqueue_script('tesseract-helpers', get_template_directory_uri().'/js/helpers' . TESSERACT_SUFFIX . '.js', array('jquery', 'tesseract-helpers-functions'), TESSERACT_VERSION, true);
 
 	if (is_plugin_active('beaver-builder-lite-version/fl-builder.php') || is_plugin_active('beaver-builder/fl-builder.php')) {
-		wp_enqueue_script('tesseract-helpers-beaver', get_template_directory_uri().'/js/helpers-beaver.js', array('jquery', 'tesseract-helpers'), '1.0.0', true);
+		wp_enqueue_script('tesseract-helpers-beaver', get_template_directory_uri().'/js/helpers-beaver' . TESSERACT_SUFFIX . '.js', array('jquery', 'tesseract-helpers'), TESSERACT_VERSION, true);
 	}
 
 	// Skip link fix
-	wp_enqueue_script('tesseract-skip-link-focus-fix', get_template_directory_uri().'/js/skip-link-focus-fix.js', array(), '1.0.0', true);
+	wp_enqueue_script('tesseract-skip-link-focus-fix', get_template_directory_uri().'/js/skip-link-focus-fix' . TESSERACT_SUFFIX . '.js', array(), TESSERACT_VERSION, true);
 
 	// Comments
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
@@ -167,7 +186,7 @@ function tesseract_scripts() {
 	}
 
 	// Register the script
-	wp_register_script('tesseract_helpers', get_template_directory_uri().'/js/helpers.js');
+	wp_register_script('tesseract_helpers', get_template_directory_uri().'/js/helpers' . TESSERACT_SUFFIX . '.js');
 }
 
 add_action('wp_enqueue_scripts', 'tesseract_scripts');
@@ -224,7 +243,7 @@ function tesseract_output_featimg_blog() {
 /*
  * Beaver Builder - remove page title
  */
-function my_theme_show_page_header() {
+function tesseract_show_page_header() {
   if (class_exists('FLBuilderModel') && FLBuilderModel::is_builder_enabled()) {
     $global_settings = FLBuilderModel::get_global_settings();
 
@@ -253,11 +272,11 @@ function tesseract_fonts_url() {
 }
 
 // Initialize Theme
-require(get_template_directory().'/inc/init-theme.php');
+require(get_template_directory().'/include/init-theme.php');
 
 // Initialize Theme for Admin
 if (is_admin()) {
-  require(get_template_directory().'/inc/admin/init-theme-admin.php');
+  require(get_template_directory().'/include/admin/init-theme-admin.php');
 }
 
 /* check if a plugin exists in the plugins directory and if it's already active */
