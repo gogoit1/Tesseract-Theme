@@ -1,9 +1,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Tesseract 2.5.2\n"
+"Project-Id-Version: Tesseract 2.5.3\n"
 "Report-Msgid-Bugs-To: https://github.com/seb86/Tesseract-Theme/issues\n"
-"POT-Creation-Date: 2016-03-14 18:48+0100\n"
+"POT-Creation-Date: 2016-03-20 01:45+0100\n"
 "PO-Revision-Date: 2015-04-02 14:08+0100\n"
 "Last-Translator: Gabor Lippert <gabor.lippert@gmail.com>\n"
 "Language-Team: \n"
@@ -52,33 +52,33 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: content-none.php:13
+#: content-none.php:12
 msgid "Nothing Found"
 msgstr ""
 
-#: content-none.php:19
+#: content-none.php:17
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: content-none.php:23
+#: content-none.php:19
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
 
-#: content-none.php:29
+#: content-none.php:22
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
 
-#: content-page.php:36 content-single.php:22 content.php:56
+#: content-page.php:39 content-single.php:21 content.php:51
 msgid "Pages:"
 msgstr ""
 
-#: content.php:47
+#: content.php:43
 #, php-format
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
@@ -87,54 +87,32 @@ msgstr ""
 msgid "Dismiss this notice."
 msgstr ""
 
-#: functions.php:87
+#: functions.php:93
 msgid "Header"
 msgstr ""
 
-#: functions.php:88
+#: functions.php:94
 msgid "Header Right"
 msgstr ""
 
-#: functions.php:89
+#: functions.php:95
 msgid "Footer"
 msgstr ""
 
-#: functions.php:124
+#: functions.php:126
 msgid "Primary Sidebar"
 msgstr ""
 
-#: functions.php:126
+#: functions.php:128
 msgid "Appears on the left."
 msgstr ""
 
-#: functions.php:840
-msgid "Read More ..."
-msgstr ""
-
-#: functions.php:868
+#: functions.php:267
 msgctxt "Google font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:952
-msgid ""
-"To edit the \"Theme by Tesseract\" at the bottom of your website you can get "
-"the Unbranding Plugin. <b>Thanks for your support!</b>"
-msgstr ""
-
-#: functions.php:953
-msgid "The Tesseract Team"
-msgstr ""
-
-#: functions.php:953
-msgid "maybe later"
-msgstr ""
-
-#: functions.php:953
-msgid "check it out"
-msgstr ""
-
-#: header.php:86
+#: header.php:66
 msgid "Skip to content"
 msgstr ""
 
@@ -530,980 +508,585 @@ msgstr ""
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: inc/beaver-builder-modules/blog/blog-module.php:17
-msgid "Blog"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:18
-msgid "A simple blog section."
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:19
-#: inc/beaver-builder-modules/map/map-module.php:13
-msgid "Advanced Modules"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:63
-msgid "No order"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:64
-msgid "Order by post id"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:65
-msgid "Order by author"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:66
-msgid "Order by title"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:67
-msgid "Order by post name (post slug)"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:68
-msgid "Order by post type"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:69
-msgid "Order by date"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:70
-msgid "Order by last modified date"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:71
-msgid "Order by post/page parent id"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:72
-msgid "Random order"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:73
-msgid "Order by number of comments"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:74
-msgid "Order by page order"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:75
-msgid "Preserve post ID order given in Specific IDs field"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:100
-#: inc/beaver-builder-modules/heading/heading-module.php:24
-#: inc/beaver-builder-modules/link-button/link-button-module.php:57
-#: inc/beaver-builder-modules/map/map-module.php:29
-msgid "General"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:103
-msgid "Loop Setup"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:107
-msgid "Post Type"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:113
-msgid "Author"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:118
-msgid "Posts per page"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:123
-msgid "Order by"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:129
-msgid "Order"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:132
-msgid "Descending"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:133
-msgid "Ascending"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:139
+#: include/admin/init-theme-admin.php:26
 msgid ""
-"List the IDs separated by comma that will be displayed (leave blank to "
-"disable)"
+"To edit the \"Theme by Tesseract\" at the bottom of your website you can get "
+"the Unbranding Plugin. <b>Thanks for your support!</b>"
 msgstr ""
 
-#: inc/beaver-builder-modules/blog/blog-module.php:144
-msgid "Format"
+#: include/admin/init-theme-admin.php:27
+msgid "The Tesseract Team"
 msgstr ""
 
-#: inc/beaver-builder-modules/blog/blog-module.php:148
-msgid "Post Display"
+#: include/admin/init-theme-admin.php:27
+msgid "maybe later"
 msgstr ""
 
-#: inc/beaver-builder-modules/blog/blog-module.php:151
-msgid "Compact"
+#: include/admin/init-theme-admin.php:27
+msgid "check it out"
 msgstr ""
 
-#: inc/beaver-builder-modules/blog/blog-module.php:152
-msgid "Vertical"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:157
-msgid "Show featured image"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:160
-#: inc/beaver-builder-modules/blog/blog-module.php:169
-#: inc/beaver-builder-modules/blog/blog-module.php:178
-#: inc/beaver-builder-modules/map/map-module.php:39
-msgid "Yes"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:161
-#: inc/beaver-builder-modules/blog/blog-module.php:170
-#: inc/beaver-builder-modules/blog/blog-module.php:179
-#: inc/beaver-builder-modules/map/map-module.php:40
-msgid "No"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:166
-msgid "Show post date"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:175
-msgid "Show post author"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/blog-module.php:184
-msgid "Excerpt more text"
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/includes/frontend.php:21
-msgid "No posts found."
-msgstr ""
-
-#: inc/beaver-builder-modules/blog/includes/post-list-vertical.php:6
+#: include/admin/init-theme-admin.php:61
 #, php-format
-msgid "Posted by %s"
+msgid ""
+"%1$s requires version %2$s of WordPress or higher. Please %3$s to ensure "
+"full compatibility."
 msgstr ""
 
-#: inc/beaver-builder-modules/blog/includes/post-list-vertical.php:10
-msgid "on"
+#: include/admin/init-theme-admin.php:67
+msgid "update WordPress"
 msgstr ""
 
-#: inc/beaver-builder-modules/heading/heading-module.php:12
-#: inc/beaver-builder-modules/heading/heading-module.php:13
-msgid "Heading"
-msgstr ""
-
-#: inc/beaver-builder-modules/heading/heading-module.php:14
-#: inc/beaver-builder-modules/link-button/link-button-module.php:13
-msgid "Basic Modules"
-msgstr ""
-
-#: inc/beaver-builder-modules/heading/heading-module.php:27
-#: inc/beaver-builder-modules/link-button/link-button-module.php:217
-#: inc/beaver-builder-modules/map/map-module.php:32
-msgid "Display"
-msgstr ""
-
-#: inc/beaver-builder-modules/heading/heading-module.php:31
-msgid "Heading text"
-msgstr ""
-
-#: inc/beaver-builder-modules/heading/heading-module.php:35
-#: inc/beaver-builder-modules/link-button/link-button-module.php:68
-msgid "Font size"
-msgstr ""
-
-#: inc/beaver-builder-modules/heading/heading-module.php:44
-msgid "Font weight"
-msgstr ""
-
-#: inc/beaver-builder-modules/heading/heading-module.php:54
-#: inc/beaver-builder-modules/link-button/link-button-module.php:169
-#: inc/beaver-builder-modules/link-button/link-button-module.php:195
-msgid "Text color"
-msgstr ""
-
-#: inc/beaver-builder-modules/heading/heading-module.php:60
-#: inc/beaver-builder-modules/link-button/link-button-module.php:221
-msgid "Alignment"
-msgstr ""
-
-#: inc/beaver-builder-modules/heading/heading-module.php:63
-msgid "Left"
-msgstr ""
-
-#: inc/beaver-builder-modules/heading/heading-module.php:64
-msgid "Center"
-msgstr ""
-
-#: inc/beaver-builder-modules/heading/heading-module.php:65
-msgid "Right"
-msgstr ""
-
-#: inc/beaver-builder-modules/heading/heading-module.php:71
-msgid "Subheadline"
-msgstr ""
-
-#: inc/beaver-builder-modules/heading/heading-module.php:96
-msgid "Vertical spacing with heading"
-msgstr ""
-
-#: inc/beaver-builder-modules/heading/heading-module.php:105
-msgid "Subheadline text"
-msgstr ""
-
-#: inc/beaver-builder-modules/heading/heading-module.php:109
-msgid "Subheadline font size"
-msgstr ""
-
-#: inc/beaver-builder-modules/heading/heading-module.php:118
-msgid "Subheadline font weight"
-msgstr ""
-
-#: inc/beaver-builder-modules/heading/heading-module.php:128
-msgid "Subheadline text color"
-msgstr ""
-
-#: inc/beaver-builder-modules/heading/heading-module.php:135
-msgid "Responsive Font Sizes"
-msgstr ""
-
-#: inc/beaver-builder-modules/heading/heading-module.php:161
-msgid "Heading medium screen"
-msgstr ""
-
-#: inc/beaver-builder-modules/heading/heading-module.php:170
-msgid "Heading small screen"
-msgstr ""
-
-#: inc/beaver-builder-modules/heading/heading-module.php:179
-msgid "Heading extra small screen"
-msgstr ""
-
-#: inc/beaver-builder-modules/heading/heading-module.php:188
-msgid "Subheadline medium screen"
-msgstr ""
-
-#: inc/beaver-builder-modules/heading/heading-module.php:197
-msgid "Subheadline small screen"
-msgstr ""
-
-#: inc/beaver-builder-modules/heading/heading-module.php:206
-msgid "Subheadline extra small screen"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:11
-#: inc/beaver-builder-modules/link-button/link-button-module.php:12
-msgid "Link Button"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:60
-msgid "Link setup"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:64
-msgid "Button text"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:77
-msgid "Button Link"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:81
-msgid "Open link in"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:84
-msgid "A new window"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:85
-msgid "The current window"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:91
-msgid "Icon setup"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:95
-msgid "Add icon?"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:121
-msgid "Icon position"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:130
-#: inc/beaver-builder-modules/link-button/link-button-module.php:149
-msgid "Icon"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:136
-#: inc/beaver-builder-modules/link-button/link-button-module.php:155
-msgid "Icon size"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:165
-msgid "Button colors"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:175
-#: inc/beaver-builder-modules/link-button/link-button-module.php:201
-msgid "Button color"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:181
-#: inc/beaver-builder-modules/link-button/link-button-module.php:207
-msgid "Button color opacity"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:191
-msgid "Button colors on hover"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:231
-msgid "Top padding"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:240
-msgid "Bottom padding"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:249
-msgid "Left padding"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:258
-msgid "Right padding"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:267
-msgid "Border"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:270
-msgid "None"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:271
-msgid "Dotted"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:272
-msgid "Dashed"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:273
-msgid "Solid"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:274
-msgid "Double"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:309
-msgid "Border width"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:314
-msgid "Border color"
-msgstr ""
-
-#: inc/beaver-builder-modules/link-button/link-button-module.php:320
-msgid "Border radius"
-msgstr ""
-
-#: inc/beaver-builder-modules/map/map-module.php:11
-msgid "Map"
-msgstr ""
-
-#: inc/beaver-builder-modules/map/map-module.php:12
-msgid "Google Map"
-msgstr ""
-
-#: inc/beaver-builder-modules/map/map-module.php:36
-msgid "Full width map?"
-msgstr ""
-
-#: inc/beaver-builder-modules/map/map-module.php:61
-msgid "Width"
-msgstr ""
-
-#: inc/beaver-builder-modules/map/map-module.php:62
-msgid "Width in pixels"
-msgstr ""
-
-#: inc/beaver-builder-modules/map/map-module.php:67
-msgid "Height"
-msgstr ""
-
-#: inc/beaver-builder-modules/map/map-module.php:68
-msgid "Height in pixels"
-msgstr ""
-
-#: inc/beaver-builder-modules/map/map-module.php:73
-msgid "Float"
-msgstr ""
-
-#: inc/beaver-builder-modules/map/map-module.php:74
-msgid "none"
-msgstr ""
-
-#: inc/beaver-builder-modules/map/map-module.php:83
-msgid "Zoom Level"
-msgstr ""
-
-#: inc/beaver-builder-modules/map/map-module.php:100
-msgid "Search location"
-msgstr ""
-
-#: inc/beaver-builder-modules/map/map-module.php:101
-msgid "Enter an address. eg. 123 Main st, Los Angeles, CA"
-msgstr ""
-
-#: inc/custom-header.php:48
+#: include/custom-header.php:47
 msgctxt ""
 msgid "Default"
 msgstr ""
 
-#: inc/customizer.php:63
+#: include/customizer/customizer.php:63
 msgid "Background Color"
 msgstr ""
 
-#: inc/customizer.php:65
+#: include/customizer/customizer.php:65
 msgid "Choose a background color"
 msgstr ""
 
-#: inc/customizer.php:66
+#: include/customizer/customizer.php:66
 msgid ""
 "(This is only for the site's generic background color. You can define header "
 "and footer background colors in the Header Options and Footer Options "
 "respectively.)"
 msgstr ""
 
-#: inc/extras.php:69
-#, php-format
-msgid "Page %s"
-msgstr ""
-
-#: inc/sections/blog.php:7
+#: include/customizer/sections/blog.php:7
 msgid "Blog Post Options"
 msgstr ""
 
-#: inc/sections/blog.php:22
+#: include/customizer/sections/blog.php:22
 msgid "Choose the article content type"
 msgstr ""
 
-#: inc/sections/blog.php:45
+#: include/customizer/sections/blog.php:45
 msgid "Choose a layout type for the Blog Post page"
 msgstr ""
 
-#: inc/sections/footer-colors.php:7
+#: include/customizer/sections/footer-colors.php:7
 msgid "Footer Colors"
 msgstr ""
 
-#: inc/sections/footer-colors.php:23
+#: include/customizer/sections/footer-colors.php:23
 msgid "Footer Background Color"
 msgstr ""
 
-#: inc/sections/footer-colors.php:41
+#: include/customizer/sections/footer-colors.php:41
 msgid "Footer Text Color"
 msgstr ""
 
-#: inc/sections/footer-colors.php:59
+#: include/customizer/sections/footer-colors.php:59
 msgid "Footer Heading Color"
 msgstr ""
 
-#: inc/sections/footer-colors.php:77
+#: include/customizer/sections/footer-colors.php:77
 msgid "Footer Link Color"
 msgstr ""
 
-#: inc/sections/footer-colors.php:95
+#: include/customizer/sections/footer-colors.php:95
 msgid "Footer Hovered Link Color"
 msgstr ""
 
-#: inc/sections/footer-content.php:6
+#: include/customizer/sections/footer-content.php:6
 msgid "Footer Content"
 msgstr ""
 
-#: inc/sections/footer-content.php:22
+#: include/customizer/sections/footer-content.php:22
 msgid "Left Footer Area:"
 msgstr ""
 
-#: inc/sections/footer-content.php:23
+#: include/customizer/sections/footer-content.php:23
 msgid "Choose the content to be displayed on the left area of the footer."
 msgstr ""
 
-#: inc/sections/footer-content.php:44 inc/sections/footer-content.php:119
-#: inc/sections/header-content.php:47
+#: include/customizer/sections/footer-content.php:44
+#: include/customizer/sections/footer-content.php:119
+#: include/customizer/sections/header-content.php:47
 msgid "Nothing"
 msgstr ""
 
-#: inc/sections/footer-content.php:45 inc/sections/footer-content.php:121
+#: include/customizer/sections/footer-content.php:45
+#: include/customizer/sections/footer-content.php:121
 msgid "Logo"
 msgstr ""
 
-#: inc/sections/footer-content.php:46 inc/sections/footer-content.php:122
-#: inc/sections/header-content.php:49
+#: include/customizer/sections/footer-content.php:46
+#: include/customizer/sections/footer-content.php:122
+#: include/customizer/sections/header-content.php:49
 msgid "Social Icons"
 msgstr ""
 
-#: inc/sections/footer-content.php:47 inc/sections/footer-content.php:123
-#: inc/sections/header-content.php:50
+#: include/customizer/sections/footer-content.php:47
+#: include/customizer/sections/footer-content.php:123
+#: include/customizer/sections/header-content.php:50
 msgid "Search Bar"
 msgstr ""
 
-#: inc/sections/footer-content.php:72
+#: include/customizer/sections/footer-content.php:72
 msgid "Footer Left Menu"
 msgstr ""
 
-#: inc/sections/footer-content.php:101 inc/sections/footer-content.php:137
+#: include/customizer/sections/footer-content.php:101
+#: include/customizer/sections/footer-content.php:137
 msgid "Right Footer Area:"
 msgstr ""
 
-#: inc/sections/footer-content.php:102
+#: include/customizer/sections/footer-content.php:102
 msgid "Choose the content to be displayed on the right area of the footer."
 msgstr ""
 
-#: inc/sections/footer-content.php:118
+#: include/customizer/sections/footer-content.php:118
 msgid "Theme by Tesseract"
 msgstr ""
 
-#: inc/sections/footer-content.php:120
+#: include/customizer/sections/footer-content.php:120
 msgid "Text or HTML"
 msgstr ""
 
-#: inc/sections/footer-content.php:124 inc/sections/header-content.php:51
+#: include/customizer/sections/footer-content.php:124
+#: include/customizer/sections/header-content.php:51
 msgid "Menu"
 msgstr ""
 
-#: inc/sections/footer-content.php:138
+#: include/customizer/sections/footer-content.php:138
 #, php-format
 msgid ""
 "<a href=\"%s\" target=\"_blank\"><img src=\"https://s3.amazonaws.com/"
 "tesseracttheme/unlock.png\" /></a>"
 msgstr ""
 
-#: inc/sections/footer-logo.php:7
+#: include/customizer/sections/footer-logo.php:7
 msgid "Footer Logo"
 msgstr ""
 
-#: inc/sections/footer-logo.php:22
+#: include/customizer/sections/footer-logo.php:22
 msgid ""
 "Check this if you want to use a logo image different from the one used in "
 "the header."
 msgstr ""
 
-#: inc/sections/footer-logo.php:41
+#: include/customizer/sections/footer-logo.php:41
 msgid "Upload Footer Logo"
 msgstr ""
 
-#: inc/sections/footer-size.php:7
+#: include/customizer/sections/footer-size.php:7
 msgid "Footer Size"
 msgstr ""
 
-#: inc/sections/footer-size.php:45
+#: include/customizer/sections/footer-size.php:45
 msgid "Select footer width"
 msgstr ""
 
-#: inc/sections/header-colors.php:7
+#: include/customizer/sections/header-colors.php:7
 msgid "Header Colors"
 msgstr ""
 
-#: inc/sections/header-colors.php:27
+#: include/customizer/sections/header-colors.php:27
 msgid "Header Background Color"
 msgstr ""
 
-#: inc/sections/header-colors.php:68
+#: include/customizer/sections/header-colors.php:68
 msgid "Header Text Color"
 msgstr ""
 
-#: inc/sections/header-colors.php:86
+#: include/customizer/sections/header-colors.php:86
 msgid "Header Link Color"
 msgstr ""
 
-#: inc/sections/header-colors.php:104
+#: include/customizer/sections/header-colors.php:104
 msgid "Header Hovered Link Color"
 msgstr ""
 
-#: inc/sections/header-content.php:7
+#: include/customizer/sections/header-content.php:7
 msgid "Header Right Block Content"
 msgstr ""
 
-#: inc/sections/header-content.php:25
+#: include/customizer/sections/header-content.php:25
 msgid ""
 "Choose the content to be displayed in the right block of the header area"
 msgstr ""
 
-#: inc/sections/header-content.php:48
+#: include/customizer/sections/header-content.php:48
 msgid "Buttons"
 msgstr ""
 
-#: inc/sections/header-content.php:70
+#: include/customizer/sections/header-content.php:70
 msgid "Button code"
 msgstr ""
 
-#: inc/sections/header-content.php:103
+#: include/customizer/sections/header-content.php:103
 msgid "Select menu"
 msgstr ""
 
-#: inc/sections/header-logo.php:7
+#: include/customizer/sections/header-logo.php:7
 msgid "Header Logo"
 msgstr ""
 
-#: inc/sections/header-logo.php:22
+#: include/customizer/sections/header-logo.php:22
 msgid "Upload Header Logo"
 msgstr ""
 
-#: inc/sections/header-menu.php:7
+#: include/customizer/sections/header-menu.php:7
 msgid "Header Menu"
 msgstr ""
 
-#: inc/sections/header-menu.php:35
+#: include/customizer/sections/header-menu.php:35
 msgid "Select Menu"
 msgstr ""
 
-#: inc/sections/header-size.php:7
+#: include/customizer/sections/header-size.php:7
 msgid "Header Size"
 msgstr ""
 
-#: inc/sections/header-size.php:45
+#: include/customizer/sections/header-size.php:45
 msgid "Select header width"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:7
+#: include/customizer/sections/mobile-menu.php:7
 msgid "Mobile Menu"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:22
+#: include/customizer/sections/mobile-menu.php:22
 msgid ""
 "Check this to open mobile menu (this way you can see how it will look with "
 "your new mobile menu settings)"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:46
+#: include/customizer/sections/mobile-menu.php:46
 msgid "Menu Background Color"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:64
+#: include/customizer/sections/mobile-menu.php:64
 msgid "Menu Link Color"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:82
+#: include/customizer/sections/mobile-menu.php:82
 msgid "Menu Link Hover Color"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:101
+#: include/customizer/sections/mobile-menu.php:101
 msgid "Menu Link Hover Background Color"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:123 inc/sections/mobile-menu.php:418
+#: include/customizer/sections/mobile-menu.php:123
+#: include/customizer/sections/mobile-menu.php:418
 msgid "Dark Opaque"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:124 inc/sections/mobile-menu.php:419
+#: include/customizer/sections/mobile-menu.php:124
+#: include/customizer/sections/mobile-menu.php:419
 msgid "Light Opaque"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:125 inc/sections/mobile-menu.php:187
-#: inc/sections/mobile-menu.php:420
+#: include/customizer/sections/mobile-menu.php:125
+#: include/customizer/sections/mobile-menu.php:187
+#: include/customizer/sections/mobile-menu.php:420
 msgid "Custom Color"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:143 inc/sections/mobile-menu.php:205
-#: inc/sections/mobile-menu.php:439
+#: include/customizer/sections/mobile-menu.php:143
+#: include/customizer/sections/mobile-menu.php:205
+#: include/customizer/sections/mobile-menu.php:439
 msgid "Choose custom color"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:163
+#: include/customizer/sections/mobile-menu.php:163
 msgid "Menu Item Shadows and Separators Color"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:185 inc/sections/mobile-menu.php:269
-#: inc/sections/mobile-menu.php:353 inc/sections/mobile-menu.php:539
+#: include/customizer/sections/mobile-menu.php:185
+#: include/customizer/sections/mobile-menu.php:269
+#: include/customizer/sections/mobile-menu.php:353
+#: include/customizer/sections/mobile-menu.php:539
 msgid "Dark"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:186 inc/sections/mobile-menu.php:270
-#: inc/sections/mobile-menu.php:354 inc/sections/mobile-menu.php:540
+#: include/customizer/sections/mobile-menu.php:186
+#: include/customizer/sections/mobile-menu.php:270
+#: include/customizer/sections/mobile-menu.php:354
+#: include/customizer/sections/mobile-menu.php:540
 msgid "Light"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:225
+#: include/customizer/sections/mobile-menu.php:225
 msgid "Header 'Search' Block Color Settings"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:246
+#: include/customizer/sections/mobile-menu.php:246
 msgid "Search Field Background Color"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:289
+#: include/customizer/sections/mobile-menu.php:289
 msgid "Search Input Text Color"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:309
+#: include/customizer/sections/mobile-menu.php:309
 msgid "Header 'Social' Block Color Settings"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:330
+#: include/customizer/sections/mobile-menu.php:330
 msgid "Social Icons Background Color"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:374
+#: include/customizer/sections/mobile-menu.php:374
 msgid "Header 'Buttons' Block Color Settings"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:395
+#: include/customizer/sections/mobile-menu.php:395
 msgid "Buttons Block Background Color"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:458
+#: include/customizer/sections/mobile-menu.php:458
 msgid "Buttons Block Text Color"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:477
+#: include/customizer/sections/mobile-menu.php:477
 msgid "Buttons Block Link Color"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:496
+#: include/customizer/sections/mobile-menu.php:496
 msgid "Buttons Block Link Hover Color"
 msgstr ""
 
-#: inc/sections/mobile-menu.php:516
+#: include/customizer/sections/mobile-menu.php:516
 msgid "Maxbutton Separator Color"
 msgstr ""
 
-#: inc/sections/search-results.php:7
+#: include/customizer/sections/search-results.php:7
 msgid "Search Results Page Options"
 msgstr ""
 
-#: inc/sections/search-results.php:22
+#: include/customizer/sections/search-results.php:22
 msgid "Choose a layout type for the Search Results page"
 msgstr ""
 
-#: inc/sections/social-accounts.php:10
+#: include/customizer/sections/social-accounts.php:10
 msgid "Settings"
 msgstr ""
 
-#: inc/sections/social-accounts.php:12
+#: include/customizer/sections/social-accounts.php:12
 msgid "Social Network Name"
 msgstr ""
 
-#: inc/sections/social-accounts.php:13
+#: include/customizer/sections/social-accounts.php:13
 msgid "URL"
 msgstr ""
 
-#: inc/sections/social-accounts.php:13
+#: include/customizer/sections/social-accounts.php:13
 msgid "Social Network URL"
 msgstr ""
 
-#: inc/sections/social-accounts.php:69
+#: include/customizer/sections/social-accounts.php:69
 msgid "Upload an icon"
 msgstr ""
 
-#: inc/sections/woocommerce.php:8
+#: include/customizer/sections/woocommerce.php:8
 msgid "WooCommerce Color Options"
 msgstr ""
 
-#: inc/sections/woocommerce.php:12
+#: include/customizer/sections/woocommerce.php:12
 msgid "WooCommerce Layout Options"
 msgstr ""
 
-#: inc/sections/woocommerce.php:28
+#: include/customizer/sections/woocommerce.php:28
 msgid "Product Listings"
 msgstr ""
 
-#: inc/sections/woocommerce.php:46
+#: include/customizer/sections/woocommerce.php:46
 msgid ""
 "Choose a layout type for product listings ( main shop and product category/"
 "tag archive pages )"
 msgstr ""
 
-#: inc/sections/woocommerce.php:72
+#: include/customizer/sections/woocommerce.php:72
 msgid "Single Product Pages"
 msgstr ""
 
-#: inc/sections/woocommerce.php:90
+#: include/customizer/sections/woocommerce.php:90
 msgid "Choose a layout type for single product pages"
 msgstr ""
 
-#: inc/sections/woocommerce.php:116
+#: include/customizer/sections/woocommerce.php:116
 msgid "Checkout, Account and Cart pages "
 msgstr ""
 
-#: inc/sections/woocommerce.php:136
+#: include/customizer/sections/woocommerce.php:136
 msgid ""
 "You can set the layout type for the Checkout, Account and Cart pages by "
 "using the default page template dropdown on the appropriate page's edit "
 "screen."
 msgstr ""
 
-#: inc/sections/woocommerce.php:156
+#: include/customizer/sections/woocommerce.php:156
 msgid "Header Cart"
 msgstr ""
 
-#: inc/sections/woocommerce.php:174
+#: include/customizer/sections/woocommerce.php:174
 msgid "Display Cart in header"
 msgstr ""
 
-#: inc/sections/woocommerce.php:194
+#: include/customizer/sections/woocommerce.php:194
 msgid "Shopping Cart Color"
 msgstr ""
 
-#: inc/template-tags.php:21
+#: include/extras.php:110
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: include/extras.php:142
+msgid "Read More ..."
+msgstr ""
+
+#: include/template-tags.php:21
 msgid "Posts navigation"
 msgstr ""
 
-#: inc/template-tags.php:25
+#: include/template-tags.php:24
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
 msgstr ""
 
-#: inc/template-tags.php:29
+#: include/template-tags.php:28
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: inc/template-tags.php:52
+#: include/template-tags.php:50
 msgid "Post navigation"
 msgstr ""
 
-#: inc/template-tags.php:55
+#: include/template-tags.php:53
 msgctxt "Previous post link"
 msgid "<span class=\"meta-nav\">&larr;</span>&nbsp;%title"
 msgstr ""
 
-#: inc/template-tags.php:56
+#: include/template-tags.php:54
 msgctxt "Next post link"
 msgid "%title&nbsp;<span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: inc/template-tags.php:82
+#: include/template-tags.php:80
 #, php-format
 msgctxt "post date"
 msgid "Posted by %s"
 msgstr ""
 
-#: inc/template-tags.php:87
+#: include/template-tags.php:85
 #, php-format
 msgctxt "post author"
 msgid "by %s"
 msgstr ""
 
-#: inc/template-tags.php:109
+#: include/template-tags.php:106
 #, php-format
 msgid "Category: %s"
 msgstr ""
 
-#: inc/template-tags.php:111
+#: include/template-tags.php:108
 #, php-format
 msgid "Tag: %s"
 msgstr ""
 
-#: inc/template-tags.php:113
+#: include/template-tags.php:110
 #, php-format
 msgid "Author: %s"
 msgstr ""
 
-#: inc/template-tags.php:115
+#: include/template-tags.php:112
 #, php-format
 msgid "Year: %s"
 msgstr ""
 
-#: inc/template-tags.php:115
+#: include/template-tags.php:112
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr ""
 
-#: inc/template-tags.php:117
+#: include/template-tags.php:114
 #, php-format
 msgid "Month: %s"
 msgstr ""
 
-#: inc/template-tags.php:117
+#: include/template-tags.php:114
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr ""
 
-#: inc/template-tags.php:119
+#: include/template-tags.php:116
 #, php-format
 msgid "Day: %s"
 msgstr ""
 
-#: inc/template-tags.php:119
+#: include/template-tags.php:116
 msgctxt "daily archives date format"
 msgid "F j, Y"
 msgstr ""
 
-#: inc/template-tags.php:121
+#: include/template-tags.php:118
 msgctxt "post format archive title"
 msgid "Asides"
 msgstr ""
 
-#: inc/template-tags.php:123
+#: include/template-tags.php:120
 msgctxt "post format archive title"
 msgid "Galleries"
 msgstr ""
 
-#: inc/template-tags.php:125
+#: include/template-tags.php:122
 msgctxt "post format archive title"
 msgid "Images"
 msgstr ""
 
-#: inc/template-tags.php:127
+#: include/template-tags.php:124
 msgctxt "post format archive title"
 msgid "Videos"
 msgstr ""
 
-#: inc/template-tags.php:129
+#: include/template-tags.php:126
 msgctxt "post format archive title"
 msgid "Quotes"
 msgstr ""
 
-#: inc/template-tags.php:131
+#: include/template-tags.php:128
 msgctxt "post format archive title"
 msgid "Links"
 msgstr ""
 
-#: inc/template-tags.php:133
+#: include/template-tags.php:130
 msgctxt "post format archive title"
 msgid "Statuses"
 msgstr ""
 
-#: inc/template-tags.php:135
+#: include/template-tags.php:132
 msgctxt "post format archive title"
 msgid "Audio"
 msgstr ""
 
-#: inc/template-tags.php:137
+#: include/template-tags.php:134
 msgctxt "post format archive title"
 msgid "Chats"
 msgstr ""
 
-#: inc/template-tags.php:139
+#: include/template-tags.php:136
 #, php-format
 msgid "Archives: %s"
 msgstr ""
 
-#: inc/template-tags.php:143
+#: include/template-tags.php:140
 #, php-format
 msgid "%1$s: %2$s"
 msgstr ""
 
-#: inc/template-tags.php:145
+#: include/template-tags.php:142
 msgid "Archives"
 msgstr ""
 
-#: search.php:34
+#: search.php:33
 #, php-format
 msgid "Search Results for: %s"
 msgstr ""
@@ -1514,4 +1097,476 @@ msgstr ""
 
 #: searchform.php:15
 msgid "Search"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:17
+msgid "Blog"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:18
+msgid "A simple blog section."
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:19
+#: temp/beaver-builder-modules/map/map-module.php:13
+msgid "Advanced Modules"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:63
+msgid "No order"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:64
+msgid "Order by post id"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:65
+msgid "Order by author"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:66
+msgid "Order by title"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:67
+msgid "Order by post name (post slug)"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:68
+msgid "Order by post type"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:69
+msgid "Order by date"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:70
+msgid "Order by last modified date"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:71
+msgid "Order by post/page parent id"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:72
+msgid "Random order"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:73
+msgid "Order by number of comments"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:74
+msgid "Order by page order"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:75
+msgid "Preserve post ID order given in Specific IDs field"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:100
+#: temp/beaver-builder-modules/heading/heading-module.php:24
+#: temp/beaver-builder-modules/link-button/link-button-module.php:57
+#: temp/beaver-builder-modules/map/map-module.php:29
+msgid "General"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:103
+msgid "Loop Setup"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:107
+msgid "Post Type"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:113
+msgid "Author"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:118
+msgid "Posts per page"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:123
+msgid "Order by"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:129
+msgid "Order"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:132
+msgid "Descending"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:133
+msgid "Ascending"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:139
+msgid ""
+"List the IDs separated by comma that will be displayed (leave blank to "
+"disable)"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:144
+msgid "Format"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:148
+msgid "Post Display"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:151
+msgid "Compact"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:152
+msgid "Vertical"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:157
+msgid "Show featured image"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:160
+#: temp/beaver-builder-modules/blog/blog-module.php:169
+#: temp/beaver-builder-modules/blog/blog-module.php:178
+#: temp/beaver-builder-modules/map/map-module.php:39
+msgid "Yes"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:161
+#: temp/beaver-builder-modules/blog/blog-module.php:170
+#: temp/beaver-builder-modules/blog/blog-module.php:179
+#: temp/beaver-builder-modules/map/map-module.php:40
+msgid "No"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:166
+msgid "Show post date"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:175
+msgid "Show post author"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/blog-module.php:184
+msgid "Excerpt more text"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/includes/frontend.php:21
+msgid "No posts found."
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/includes/post-list-vertical.php:6
+#, php-format
+msgid "Posted by %s"
+msgstr ""
+
+#: temp/beaver-builder-modules/blog/includes/post-list-vertical.php:10
+msgid "on"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:12
+#: temp/beaver-builder-modules/heading/heading-module.php:13
+msgid "Heading"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:14
+#: temp/beaver-builder-modules/link-button/link-button-module.php:13
+msgid "Basic Modules"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:27
+#: temp/beaver-builder-modules/link-button/link-button-module.php:217
+#: temp/beaver-builder-modules/map/map-module.php:32
+msgid "Display"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:31
+msgid "Heading text"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:35
+#: temp/beaver-builder-modules/link-button/link-button-module.php:68
+msgid "Font size"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:44
+msgid "Font weight"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:54
+#: temp/beaver-builder-modules/link-button/link-button-module.php:169
+#: temp/beaver-builder-modules/link-button/link-button-module.php:195
+msgid "Text color"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:60
+#: temp/beaver-builder-modules/link-button/link-button-module.php:221
+msgid "Alignment"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:63
+msgid "Left"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:64
+msgid "Center"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:65
+msgid "Right"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:71
+msgid "Subheadline"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:96
+msgid "Vertical spacing with heading"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:105
+msgid "Subheadline text"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:109
+msgid "Subheadline font size"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:118
+msgid "Subheadline font weight"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:128
+msgid "Subheadline text color"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:135
+msgid "Responsive Font Sizes"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:161
+msgid "Heading medium screen"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:170
+msgid "Heading small screen"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:179
+msgid "Heading extra small screen"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:188
+msgid "Subheadline medium screen"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:197
+msgid "Subheadline small screen"
+msgstr ""
+
+#: temp/beaver-builder-modules/heading/heading-module.php:206
+msgid "Subheadline extra small screen"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:11
+#: temp/beaver-builder-modules/link-button/link-button-module.php:12
+msgid "Link Button"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:60
+msgid "Link setup"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:64
+msgid "Button text"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:77
+msgid "Button Link"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:81
+msgid "Open link in"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:84
+msgid "A new window"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:85
+msgid "The current window"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:91
+msgid "Icon setup"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:95
+msgid "Add icon?"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:121
+msgid "Icon position"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:130
+#: temp/beaver-builder-modules/link-button/link-button-module.php:149
+msgid "Icon"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:136
+#: temp/beaver-builder-modules/link-button/link-button-module.php:155
+msgid "Icon size"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:165
+msgid "Button colors"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:175
+#: temp/beaver-builder-modules/link-button/link-button-module.php:201
+msgid "Button color"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:181
+#: temp/beaver-builder-modules/link-button/link-button-module.php:207
+msgid "Button color opacity"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:191
+msgid "Button colors on hover"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:231
+msgid "Top padding"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:240
+msgid "Bottom padding"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:249
+msgid "Left padding"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:258
+msgid "Right padding"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:267
+msgid "Border"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:270
+msgid "None"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:271
+msgid "Dotted"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:272
+msgid "Dashed"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:273
+msgid "Solid"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:274
+msgid "Double"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:309
+msgid "Border width"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:314
+msgid "Border color"
+msgstr ""
+
+#: temp/beaver-builder-modules/link-button/link-button-module.php:320
+msgid "Border radius"
+msgstr ""
+
+#: temp/beaver-builder-modules/map/map-module.php:11
+msgid "Map"
+msgstr ""
+
+#: temp/beaver-builder-modules/map/map-module.php:12
+msgid "Google Map"
+msgstr ""
+
+#: temp/beaver-builder-modules/map/map-module.php:36
+msgid "Full width map?"
+msgstr ""
+
+#: temp/beaver-builder-modules/map/map-module.php:61
+msgid "Width"
+msgstr ""
+
+#: temp/beaver-builder-modules/map/map-module.php:62
+msgid "Width in pixels"
+msgstr ""
+
+#: temp/beaver-builder-modules/map/map-module.php:67
+msgid "Height"
+msgstr ""
+
+#: temp/beaver-builder-modules/map/map-module.php:68
+msgid "Height in pixels"
+msgstr ""
+
+#: temp/beaver-builder-modules/map/map-module.php:73
+msgid "Float"
+msgstr ""
+
+#: temp/beaver-builder-modules/map/map-module.php:74
+msgid "none"
+msgstr ""
+
+#: temp/beaver-builder-modules/map/map-module.php:83
+msgid "Zoom Level"
+msgstr ""
+
+#: temp/beaver-builder-modules/map/map-module.php:100
+msgid "Search location"
+msgstr ""
+
+#: temp/beaver-builder-modules/map/map-module.php:101
+msgid "Enter an address. eg. 123 Main st, Los Angeles, CA"
+msgstr ""
+
+#: woocommerce/woocommerce-functions.php:69
+#: woocommerce/woocommerce-functions.php:120
+msgid "Your Shopping Cart is empty."
+msgstr ""
+
+#: woocommerce/woocommerce-functions.php:74
+#: woocommerce/woocommerce-functions.php:125
+msgid "Product Name"
+msgstr ""
+
+#: woocommerce/woocommerce-functions.php:75
+#: woocommerce/woocommerce-functions.php:126
+msgid "Quantity"
+msgstr ""
+
+#: woocommerce/woocommerce-functions.php:76
+#: woocommerce/woocommerce-functions.php:127
+msgid "Price"
+msgstr ""
+
+#: woocommerce/woocommerce-functions.php:97
+#: woocommerce/woocommerce-functions.php:148
+msgid "View Cart"
+msgstr ""
+
+#: woocommerce/woocommerce-functions.php:97
+#: woocommerce/woocommerce-functions.php:148
+msgid "Items"
 msgstr ""
