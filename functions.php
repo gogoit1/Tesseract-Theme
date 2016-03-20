@@ -10,20 +10,20 @@ include_once(ABSPATH.'wp-admin/includes/plugin.php');
 /**
  * The current version of the theme.
  */
-define( 'TESSERACT_VERSION', '2.5.3' );
+define('TESSERACT_VERSION', '2.5.3');
 
 /**
  * The minimum version of WordPress required for Tesseract.
  */
-define( 'TESSERACT_MIN_WP_VERSION', '4.2' );
+define('TESSERACT_MIN_WP_VERSION', '4.2');
 
 /**
  * The suffix to use for scripts.
  */
-if ( ( defined( 'SCRIPT_DEBUG' ) && true === SCRIPT_DEBUG ) ) {
-	define( 'TESSERACT_SUFFIX', '' );
+if ((defined('SCRIPT_DEBUG') && true === SCRIPT_DEBUG)) {
+	define('TESSERACT_SUFFIX', '');
 } else {
-	define( 'TESSERACT_SUFFIX', '.min' );
+	define('TESSERACT_SUFFIX', '.min');
 }
 
 /**
@@ -54,7 +54,7 @@ if ( ! function_exists('tesseract_setup')) {
     add_theme_support('automatic-feed-links');
 
     // Add tyles the visual editor to resemble the theme style.
-    add_editor_style(array('assets/css/admin/editor-style' . TESSERACT_SUFFIX . '.css', tesseract_fonts_url()));
+    add_editor_style(array('assets/css/admin/editor-style'.TESSERACT_SUFFIX.'.css', tesseract_fonts_url()));
 
     /*
      * Let WordPress manage the document title.
@@ -147,7 +147,7 @@ function tesseract_scripts() {
 	wp_enqueue_style('tesseract-fonts', tesseract_fonts_url(), array(), TESSERACT_VERSION);
 
   // Social icons style
-	wp_enqueue_style('tesseract-icons', get_template_directory_uri().'/assets/css/lib/typicons' . TESSERACT_SUFFIX . '.css', array(), '2.0.7');
+	wp_enqueue_style('tesseract-icons', get_template_directory_uri().'/assets/css/lib/typicons'.TESSERACT_SUFFIX.'.css', array(), '2.0.7');
 
 	/* Only enqueue font-awesome stylesheet if not already enqueued */
 	if (array_search('font-awesome', $wp_styles->queue) === false) {
@@ -155,30 +155,30 @@ function tesseract_scripts() {
 	}
 
   // Horizontal menu style
-	wp_enqueue_style('tesseract-site-banner', get_template_directory_uri().'/assets/css/site-banner' . TESSERACT_SUFFIX . '.css', array('tesseract-style'), TESSERACT_VERSION);
-	wp_enqueue_style('tesseract-footer-banner', get_template_directory_uri().'/assets/css/footer-banner' . TESSERACT_SUFFIX . '.css', array('tesseract-style'), TESSERACT_VERSION);
+	wp_enqueue_style('tesseract-site-banner', get_template_directory_uri().'/assets/css/site-banner'.TESSERACT_SUFFIX.'.css', array('tesseract-style'), TESSERACT_VERSION);
+	wp_enqueue_style('tesseract-footer-banner', get_template_directory_uri().'/assets/css/footer-banner'.TESSERACT_SUFFIX.'.css', array('tesseract-style'), TESSERACT_VERSION);
 	wp_enqueue_style('dashicons');
-	wp_enqueue_style('tesseract-sidr-style', get_template_directory_uri().'/assets/css/jquery.sidr' . TESSERACT_SUFFIX . '.css', array('tesseract-style'), TESSERACT_VERSION);
+	wp_enqueue_style('tesseract-sidr-style', get_template_directory_uri().'/assets/css/jquery.sidr'.TESSERACT_SUFFIX.'.css', array('tesseract-style'), TESSERACT_VERSION);
 
 	// Fittext
 	wp_enqueue_script('tesseract-fittext', get_template_directory_uri().'/assets/js/lib/jquery.fittext.js', array('jquery'), '1.2', true);
 
 	//Mobile menu
-	wp_enqueue_script('tesseract-sidr', get_template_directory_uri().'/assets/js/jquery.sidr' . TESSERACT_SUFFIX . '.js', array('tesseract-fittext'), TESSERACT_VERSION, true);
+	wp_enqueue_script('tesseract-sidr', get_template_directory_uri().'/assets/js/jquery.sidr'.TESSERACT_SUFFIX.'.js', array('tesseract-fittext'), TESSERACT_VERSION, true);
 
 	// Modernizr for old browsers
 	wp_enqueue_script('tesseract-modernizr', get_template_directory_uri().'/assets/js/lib/modernizr.custom.min.js', array(), '2.8.3', false);
 
   // JS helpers (This is also the place where we call the jQuery in array)
-	wp_enqueue_script('tesseract-helpers-functions', get_template_directory_uri().'/assets/js/helpers-functions' . TESSERACT_SUFFIX . '.js', array('jquery', 'tesseract-sidr'), TESSERACT_VERSION, true);
-	wp_enqueue_script('tesseract-helpers', get_template_directory_uri().'/assets/js/helpers' . TESSERACT_SUFFIX . '.js', array('jquery', 'tesseract-helpers-functions'), TESSERACT_VERSION, true);
+	wp_enqueue_script('tesseract-helpers-functions', get_template_directory_uri().'/assets/js/helpers-functions'.TESSERACT_SUFFIX.'.js', array('jquery', 'tesseract-sidr'), TESSERACT_VERSION, true);
+	wp_enqueue_script('tesseract-helpers', get_template_directory_uri().'/assets/js/helpers'.TESSERACT_SUFFIX.'.js', array('jquery', 'tesseract-helpers-functions'), TESSERACT_VERSION, true);
 
 	if (is_plugin_active('beaver-builder-lite-version/fl-builder.php') || is_plugin_active('beaver-builder/fl-builder.php')) {
-		wp_enqueue_script('tesseract-helpers-beaver', get_template_directory_uri().'/assets/js/helpers-beaver' . TESSERACT_SUFFIX . '.js', array('jquery', 'tesseract-helpers'), TESSERACT_VERSION, true);
+		wp_enqueue_script('tesseract-helpers-beaver', get_template_directory_uri().'/assets/js/helpers-beaver'.TESSERACT_SUFFIX.'.js', array('jquery', 'tesseract-helpers'), TESSERACT_VERSION, true);
 	}
 
 	// Skip link fix
-	wp_enqueue_script('tesseract-skip-link-focus-fix', get_template_directory_uri().'/assets/js/skip-link-focus-fix' . TESSERACT_SUFFIX . '.js', array(), TESSERACT_VERSION, true);
+	wp_enqueue_script('tesseract-skip-link-focus-fix', get_template_directory_uri().'/assets/js/skip-link-focus-fix'.TESSERACT_SUFFIX.'.js', array(), TESSERACT_VERSION, true);
 
 	// Comments
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
@@ -186,7 +186,7 @@ function tesseract_scripts() {
 	}
 
 	// Register the script
-	wp_register_script('tesseract_helpers', get_template_directory_uri().'/assets/js/helpers' . TESSERACT_SUFFIX . '.js');
+	wp_register_script('tesseract_helpers', get_template_directory_uri().'/assets/js/helpers'.TESSERACT_SUFFIX.'.js');
 }
 
 add_action('wp_enqueue_scripts', 'tesseract_scripts');
