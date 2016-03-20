@@ -66,14 +66,14 @@ function tesseract_wc_header_add_to_cart_fragment($fragments) {
 		<div class="cart-content-details-wrap">
 			<div class="cart-content-details">
 				<?php if (WC()->cart->cart_contents_count == 0) { ?>
-					<span><?php _e( 'Your Shopping Cart is empty.', 'tesseract' ); ?></span>
+					<span><?php _e('Your Shopping Cart is empty.', 'tesseract'); ?></span>
 				<?php } else { ?>
 					<table class="cart-content-details-table">
 						<thead>
 							<tr>
-								<th><?php _e( 'Product Name', 'tesseract' ); ?></th>
-								<th><?php _e( 'Quantity', 'tesseract' ); ?></th>
-								<th class="right"><?php _e( 'Price', 'tesseract' ); ?></th>
+								<th><?php _e('Product Name', 'tesseract'); ?></th>
+								<th><?php _e('Quantity', 'tesseract'); ?></th>
+								<th class="right"><?php _e('Price', 'tesseract'); ?></th>
 							</tr>
 						</thead>
 						<tfoot>
@@ -87,14 +87,14 @@ function tesseract_wc_header_add_to_cart_fragment($fragments) {
 								echo '<tr>'.
 								'<td>'.$product['data']->post->post_name.'</td>'.
 								'<td>'.$product['quantity'].'</td>'.
-								'<td class="right">' . intval( $product['quantity'] ) * intval( $product['data']->price ) . get_woocommerce_currency() . '</td>'.
+								'<td class="right">'.intval($product['quantity'])*intval($product['data']->price).get_woocommerce_currency().'</td>'.
 								'</tr>';
 							}
 							?>
 						</tbody>
 					</table>
 				<?php } ?>
-				<a href="<?php echo WC()->cart->get_cart_url(); ?>"><?php _e( 'View Cart', 'tessearact' ); ?> (<?php echo WC()->cart->cart_contents_count; ?> <?php _e( 'Items', 'tesseract' ); ?>)</a>
+				<a href="<?php echo WC()->cart->get_cart_url(); ?>"><?php _e('View Cart', 'tessearact'); ?> (<?php echo WC()->cart->cart_contents_count; ?> <?php _e('Items', 'tesseract'); ?>)</a>
 			</div>
 		</div>
 	</div>
@@ -117,14 +117,14 @@ function tesseract_wc_output_cart() {
 		<div class="cart-content-details-wrap">
 			<div class="cart-content-details">
 				<?php if (WC()->cart->cart_contents_count == 0) { ?>
-					<span><?php _e( 'Your Shopping Cart is empty.', 'tesseract' ); ?></span>
+					<span><?php _e('Your Shopping Cart is empty.', 'tesseract'); ?></span>
 				<?php } else { ?>
 					<table class="cart-content-details-table">
 						<thead>
 							<tr>
-								<th><?php _e( 'Product Name', 'tesseract' ); ?></th>
-								<th><?php _e( 'Quantity', 'tesseract' ); ?></th>
-								<th class="right"><?php _e( 'Price', 'tesseract' ); ?></th>
+								<th><?php _e('Product Name', 'tesseract'); ?></th>
+								<th><?php _e('Quantity', 'tesseract'); ?></th>
+								<th class="right"><?php _e('Price', 'tesseract'); ?></th>
 							</tr>
 						</thead>
 						<tfoot>
@@ -138,14 +138,14 @@ function tesseract_wc_output_cart() {
 								echo '<tr>'.
 								'<td>'.$product['data']->post->post_name.'</td>'.
 								'<td>'.$product['quantity'].'</td>'.
-								'<td class="right">' . intval( $product['quantity'] ) * intval( $product['data']->price ) . get_woocommerce_currency() . '</td>'.
+								'<td class="right">'.intval($product['quantity'])*intval($product['data']->price).get_woocommerce_currency().'</td>'.
 								'</tr>';
 							}
 							?>
 						</tbody>
 					</table>
 				<?php } ?>
-				<a href="<?php echo WC()->cart->get_cart_url(); ?>"><?php _e( 'View Cart', 'tesseract' ); ?> (<?php echo WC()->cart->cart_contents_count; ?> <?php _e( 'Items', 'tesseract' ); ?>)</a>
+				<a href="<?php echo WC()->cart->get_cart_url(); ?>"><?php _e('View Cart', 'tesseract'); ?> (<?php echo WC()->cart->cart_contents_count; ?> <?php _e('Items', 'tesseract'); ?>)</a>
 			</div>
 		</div>
 	</div>
