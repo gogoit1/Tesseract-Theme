@@ -301,3 +301,6 @@ figure {
     margin-top: 0;
     padding: 0;
 }
+
+/*============================== Additional CSS 17.06.2016 ==============================*/
+.download-button a { text-transform:none;}
