@@ -3,22 +3,25 @@
  * section SOCIAL/ACCOUNTS
  */
 
-	for ($i = 1; $i <= 10; $i++) {
-		$account_number = sprintf('%02d', $i);
-		$is_used = is_string(get_theme_mod("tesseract_social_account{$account_number}_name"));
+	for ( $i = 1; $i <= 10; $i++ ) {
+		$account_number = sprintf( '%02d', $i );
+		$is_used = is_string( get_theme_mod( "tesseract_social_account{$account_number}_name" ) );
 
-		$sectionName = ($is_used) ? get_theme_mod("tesseract_social_account{$account_number}_name").' Account '.__('Settings', 'tesseract') : __("Social Account {$account_number} Settings", 'tesseract');
-		$sectionPriority = ($is_used) ? $i : $i+10;
-		$networkName = ($is_used) ? get_theme_mod("tesseract_social_account{$account_number}_name") : __('Social Network Name', 'tesseract');
-		$accountUrl = ($is_used) ? get_theme_mod("tesseract_social_account{$account_number}_name").' Account '.__('URL', 'tesseract') : __('Social Network URL', 'tesseract');
+		$sectionName = ( $is_used ) ? get_theme_mod( "tesseract_social_account{$account_number}_name" ) . ' Account ' . __( 'Settings', 'tesseract' ) : __( "Social Account Settings", 'tesseract' );
+		//$sectionName = ( $is_used ) ? get_theme_mod( "tesseract_social_account{$account_number}_name" ) . ' Account ' . __( 'Settings', 'tesseract' ) : __( "Social Account {$account_number} Settings", 'tesseract' );
+		//$sectionName = ( $is_used ) ? get_theme_mod( "tesseract_social_account{$account_number}_name" ) . ' Account ' . __() : __( "Social Account {$account_number} Settings", 'tesseract' );
+		
+		$sectionPriority = ( $is_used ) ? $i : $i + 10;
+		$networkName = ( $is_used ) ? get_theme_mod( "tesseract_social_account{$account_number}_name" ) : __( 'Social Network Name', 'tesseract' );
+		$accountUrl = ( $is_used ) ? get_theme_mod( "tesseract_social_account{$account_number}_name" ) . ' Account ' . __( 'URL', 'tesseract' ) : __( 'Social Network URL', 'tesseract' );
 
-		$wp_customize->add_section("tesseract_social_account{$account_number}", array(
+		$wp_customize->add_section( "tesseract_social_account{$account_number}", array(
 			'title'      => $sectionName,
 			'priority'   => $sectionPriority,
 			'panel' 	 => 'tesseract_social'
 		));
 
-		$wp_customize->add_setting("tesseract_social_account{$account_number}_name", array(
+		$wp_customize->add_setting( "tesseract_social_account{$account_number}_name", array(
 				'transport'         => 'postMessage',
 				'sanitize_callback' => 'esc_html'
 		));
@@ -37,7 +40,7 @@
 			)
 		);
 
-		$wp_customize->add_setting("tesseract_social_account{$account_number}_url", array(
+		$wp_customize->add_setting( "tesseract_social_account{$account_number}_url", array(
 				'transport'         => 'postMessage',
 				'sanitize_callback' => 'esc_url'
 		));
@@ -56,7 +59,7 @@
 			)
 		);
 
-		$wp_customize->add_setting("tesseract_social_account{$account_number}_image", array(
+		$wp_customize->add_setting( "tesseract_social_account{$account_number}_image", array(
 				'transport'         => 'refresh',
 				'sanitize_callback' => 'esc_url'
 		));
@@ -66,7 +69,7 @@
 				$wp_customize,
 				"tesseract_social_account{$account_number}_image_control",
 				array(
-					'label'      => __('Upload an icon', 'tesseract'),
+					'label'      => __( 'Upload an icon', 'tesseract' ),
 					'section'    => "tesseract_social_account{$account_number}",
 					'settings'   => "tesseract_social_account{$account_number}_image",
 					'priority' 	 => 3

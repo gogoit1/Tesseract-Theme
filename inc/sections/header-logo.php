@@ -3,23 +3,23 @@
  * section HEADER LOGO
  */	
  
-   	$wp_customize->add_section('tesseract_header_logo', array(
+   	$wp_customize->add_section( 'tesseract_header_logo' , array(
     	'title'      => __('Header Logo', 'tesseract'),
     	'priority'   => 3,
 		'panel'		 => 'tesseract_header_options'
-	));	
+	) );	
 	
-		$wp_customize->add_setting('tesseract_header_logo_image', array(
+		$wp_customize->add_setting( 'tesseract_header_logo_image', array(
 				'transport'         => 'refresh',
 				'sanitize_callback' => 'esc_url'
-		));
+		) );
 
 			$wp_customize->add_control(
 				   new WP_Customize_Image_Control(
 					   $wp_customize,
 					   'tesseract_header_logo_image_control',
 					   array(
-						   'label'      => __('Upload Header Logo', 'tesseract'),
+						   'label'      => __( 'Upload Header Logo', 'tesseract' ),
 						   'section'    => 'tesseract_header_logo',
 						   'settings'   => 'tesseract_header_logo_image',
 						   'priority' 	=> 1
@@ -27,13 +27,13 @@
 				   )
 			   );
 			   
-		$wp_customize->add_setting('tesseract_header_logo_height', array(
+		$wp_customize->add_setting( 'tesseract_header_logo_height', array(
 				'transport'         => 'postMessage',
 				'sanitize_callback' => 'absint',
 				'default' 			=> 40
-		));			
+		) );			
 			
-			$wp_customize->add_control('tesseract_header_logo_height_control', array(
+			$wp_customize->add_control( 'tesseract_header_logo_height_control', array(
 				'type'        		=> 'range',
 				'priority'    		=> 2,
 				'section'     		=> 'tesseract_header_logo',
@@ -49,6 +49,6 @@
 				),
 				'active_callback' 	=> 'tesseract_header_logo_height_enable',
 				'priority' 			=> 2
-			));
+			) );
 			   
 			   
