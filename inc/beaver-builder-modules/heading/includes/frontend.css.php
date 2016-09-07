@@ -3,7 +3,7 @@
 	font-size: <?php echo $settings->size; ?>px;
 	font-weight: <?php echo $settings->weight; ?>;
 	text-align: <?php echo $settings->alignment; ?>;
-	<?php if ( ! empty($settings->add_subheadline)): ?>
+	<?php if ( ! empty( $settings->add_subheadline ) ): ?>
 	margin-bottom: <?php echo $settings->vertical_spacing; ?>px;
 	<?php endif; ?>
 }
@@ -15,7 +15,7 @@
 	text-align: <?php echo $settings->alignment; ?>;
 }
 
-<?php if ($settings->enable_responsive_font_sizes === 'yes'): ?>
+<?php if ( $settings->enable_responsive_font_sizes === 'yes' ): ?>
 @media screen and (max-width: 1200px) {
 	.fl-node-<?php echo $id; ?> h2 {
 		font-size: <?php echo $settings->heading_md; ?>px;
