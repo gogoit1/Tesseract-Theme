@@ -35,21 +35,21 @@ function tesseract_custom_header_setup() {
 		'admin-preview-callback' => 'tesseract_admin_header_image',
 	);
 
-	add_theme_support('custom-header', $args);
+	add_theme_support( 'custom-header', $args );
 
 	/*
 	 * Default custom headers packaged with the theme.
 	 * %s is a placeholder for the theme template directory URI.
 	 */
-	register_default_headers(array(
+	register_default_headers( array(
 		'circle' => array(
 			'url'           => '%s/images/default-header.jpg',
 			'thumbnail_url' => '%s/images/default-header-thumbnail.jpg',
-			'description'   => _x('Default', '', 'tesseract')
+			'description'   => _x( 'Default', '', 'tesseract' )
 		)
-	));
+	) );
 }
-add_action('after_setup_theme', 'tesseract_custom_header_setup', 11);
+add_action( 'after_setup_theme', 'tesseract_custom_header_setup', 11 );
 
 /**
  * Load our special font CSS files.
@@ -58,12 +58,12 @@ add_action('after_setup_theme', 'tesseract_custom_header_setup', 11);
  */
 function tesseract_custom_header_fonts() {
 	// Add Source Sans Pro and Bitter fonts.
-	wp_enqueue_style('tesseract-fonts', tesseract_fonts_url(), array(), null);
+	wp_enqueue_style( 'tesseract-fonts', tesseract_fonts_url(), array(), null );
 
 	// Add Genericons font.
-	wp_enqueue_style('genericons', get_template_directory_uri().'/genericons/genericons.css', array(), '3.03');
+	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.03' );
 }
-add_action('admin_print_styles-appearance_page_custom-header', 'tesseract_custom_header_fonts');
+add_action( 'admin_print_styles-appearance_page_custom-header', 'tesseract_custom_header_fonts' );
 
 
 
@@ -82,8 +82,8 @@ function tesseract_admin_header_style() {
 		-moz-box-sizing:    border-box;
 		box-sizing:         border-box;
 		<?php
-		if ( ! empty($header_image)) {
-			echo 'background: url('.esc_url($header_image).') no-repeat scroll top; background-size: 1600px auto;';
+		if ( ! empty( $header_image ) ) {
+			echo 'background: url(' . esc_url( $header_image ) . ') no-repeat scroll top; background-size: 1600px auto;';
 		} ?>
 		padding: 0 20px;
 	}
@@ -94,12 +94,12 @@ function tesseract_admin_header_style() {
 		margin: 0 auto;
 		max-width: 1040px;
 		<?php
-		if ( ! empty($header_image) || display_header_text()) {
+		if ( ! empty( $header_image ) || display_header_text() ) {
 			echo 'min-height: 230px;';
 		} ?>
 		width: 100%;
 	}
-	<?php if ( ! display_header_text()) : ?>
+	<?php if ( ! display_header_text() ) : ?>
 	#headimg h1,
 	#headimg h2 {
 		position: absolute !important;
@@ -141,10 +141,10 @@ function tesseract_admin_header_style() {
 function tesseract_admin_header_image() {
 	?>
 	<div id="headimg" style="background: url(<?php header_image(); ?>) no-repeat scroll top; background-size: 1600px auto;">
-		<?php $style = ' style="color:#'.get_header_textcolor().';"'; ?>
+		<?php $style = ' style="color:#' . get_header_textcolor() . ';"'; ?>
 		<div class="home-link">
-			<h1 class="displaying-header-text"><a id="name"<?php echo $style; ?> onclick="return false;" href="#" tabindex="-1"><?php bloginfo('name'); ?></a></h1>
-			<h2 id="desc" class="displaying-header-text"<?php echo $style; ?>><?php bloginfo('description'); ?></h2>
+			<h1 class="displaying-header-text"><a id="name"<?php echo $style; ?> onclick="return false;" href="#" tabindex="-1"><?php bloginfo( 'name' ); ?></a></h1>
+			<h2 id="desc" class="displaying-header-text"<?php echo $style; ?>><?php bloginfo( 'description' ); ?></h2>
 		</div>
 	</div>
 <?php }
