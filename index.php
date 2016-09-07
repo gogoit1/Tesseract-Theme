@@ -11,38 +11,51 @@
  * @package Tesseract
  */
 
-get_header();
+get_header();  
 ?>
-	<div id="primary" class="content-area">
+
+	<?php
+		$bplayout = get_theme_mod('tesseract_blog_post_layout');
+ 
+		switch ( $bplayout ) {
+			case 'fullwidth':
+				$primary_classnw = 'full-width-page no-sidebar';
+
+				break;
+			case 'sidebar-right':
+				$primary_classnw = 'content-area sidebar-right';
+
+				break;
+			default:
+				// sidebar-left
+				$primary_classnw = 'content-area';
+		}
+	?>
+
+	<div id="primary" class="<?php echo $primary_classnw; ?>">
 		<main id="main" class="site-main" role="main">
-			<?php if (is_home() && ! is_front_page()) { ?><header class="page-header"></br></br></header><!-- .page-header --><?php } ?>
+        
+        <?php if ( is_home() && !is_front_page() &&is_single() ) { ?>
+			<header class="page-header">
+				</br>
+			</header><!-- .page-header -->
+		<?php } ?>    
 
-			<?php
-			if (have_posts()) {
+			<?php while ( have_posts() ) : the_post(); ?>
 
-				while (have_posts()) : the_post();
+				<?php
+					get_template_part( 'content', get_post_format() );
+				?>
 
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part('content', get_post_format());
+			<?php endwhile; ?>
 
-				endwhile;
 
-				if (is_home()) {
-					tesseract_paging_nav();
-				}
 
-			} else {
-				get_template_part('content', 'none');
-			}
-			?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
-
-get_footer();
-?>
+		if ( !$bplayout || ( $bplayout == 'sidebar-left' ) || ( $bplayout == 'sidebar-right' ) ) get_sidebar();
+	?>
+<?php //get_footer(); ?>
+<?php get_footer('custes'); ?>

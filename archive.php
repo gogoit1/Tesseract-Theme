@@ -6,38 +6,48 @@
  *
  * @package Tesseract
  */
-get_header();
-?>
-<div id="primary" class="full-width-page">
-	<main id="main" class="site-main" role="main">
-    <h1 class="page-title"><?php the_title(); ?></h1>
-    <?php if (is_tag() || is_category() || is_tax()) { ?>
-    	<div class="archive-description"><?php echo term_description(); ?></div>
+
+get_header(); ?>
+
+	<div id="primary" class="full-width-page">
+    <div class="leftSidebar"><?php get_sidebar(); ?></div>
+    <div class="rightSidebar"><main id="main" class="site-main" role="main">
+        
+        <h1 class="page-title"><?php the_archive_title(); ?></h1>
+        
+        <?php if ( is_tag() || is_category() || is_tax() ) { ?>
+        	<div class="archive-description"><?php the_archive_description(); ?></div>
 		<?php } ?>
 
-		<?php
-		if (have_posts()) {
-			while (have_posts()) : the_post();
+		<?php if ( have_posts() ) : ?>
 
-				/* Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part('content', get_post_format());
+			<?php /* Start the Loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-			endwhile;
+				<?php
+					/* Include the Post-Format-specific template for the content.
+					 * If you want to override this in a child theme, then include a file
+					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+					 */
+					get_template_part( 'content', get_post_format() );
+				?>
 
-			tesseract_paging_nav();
+			<?php endwhile; ?>
 
-		} else {
-			get_template_part('content', 'none');
-		}
-		?>
-	</main><!-- #main -->
-</div><!-- #primary -->
+			<?php tesseract_paging_nav(); ?>
 
-<?php
-get_sidebar();
+		<?php else : ?>
 
-get_footer();
-?>
+			<?php get_template_part( 'content', 'none' ); ?>
+
+		<?php endif; ?>
+
+		</main></div>
+    
+		<!-- #main -->
+	</div><!-- #primary -->
+
+
+
+<?php //get_footer(); ?>
+<?php get_footer('custes'); ?>
