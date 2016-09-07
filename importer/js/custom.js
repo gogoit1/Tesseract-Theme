@@ -6,4 +6,10 @@
 			$( '#unbranding-plugin-notice' ).fadeOut();
 		});
 	});
+	$( document ).on( 'click', '#dismiss-tesseractplus, #tesseractplus-plugin-notice .notice-dismiss', function() {
+		$.post( ajaxurl, {action: 'dismiss_tesseractpls'}, function() {
+			/* remove the unbranding notice box */
+			$( '#tesseractplus-plugin-notice' ).fadeOut();
+		});
+	});
 })(jQuery)

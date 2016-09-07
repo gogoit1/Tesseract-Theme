@@ -3,7 +3,9 @@ jQuery(function ( $ ) {
 	$( '.fl-builder-bar-actions .fl-builder-tools-button' ).after(
 		'<span class="fl-builder-tesseract-blocks-button fl-builder-button">Content Blocks</span>'
 	);
-	if(FLBuilderConfig) FLBuilderConfig.upgradeUrl = 'https://www.wpbeaverbuilder.com/pricing/?fla=50&campaign=tesseracttheme';
+	//if(FLBuilderConfig) FLBuilderConfig.upgradeUrl = 'https://www.wpbeaverbuilder.com/pricing/?fla=50&campaign=tesseracttheme';
+	if(FLBuilderConfig) FLBuilderConfig.upgradeUrl = 'http://tesseracttheme.com/plus/';
+	
 	// Set up the popup/modal using Beaver Builder's UI
 	var contentBlocksLightbox = new FLLightbox({
 		className: 'fl-builder-tesseract-blocks-lightbox'
